@@ -49,12 +49,12 @@
             <fieldset class="mainFieldset">
                 <legend>Personal Information</legend>
                 <label for="fullName">Full Name</label>
-                <input type="text" name="fullName" id="fullName">
+                <input type="text" name="fullName" id="fullName" required>
                 <br>
                 <br>
                 <label for="NIC">NIC Number</label>
                 <br>
-                <input type="text" name="NIC" id="NIC" maxlength="12" pattern="/(^[0-9]{9}[V,X]$)|(^[0-9]{12}$)/i">
+                <input type="text" name="NIC" id="NIC" maxlength="12" pattern="/(^[0-9]{9}[V,X]$)|(^[0-9]{12}$)/i" required>
                 <br>
                 <br>
                 <label for="pTpNo">Telephone Number(Private)</label>
@@ -62,36 +62,41 @@
                 <input type="tel" name="pTpNo" id="pTpNo" pattern="/^[0-9]{10}$/">
                 <br>
                 <br>
+                <label for="pTpNo">Email Address</label>
+                <br>
+                <input type="email" name="eAddress" id="eAddres">
+                <br>
+                <br>
                 <label for="NIC">Address(Residential/Permanent)</label><br>
-                <textarea name="address" id="pAddress" cols="30" rows="7"></textarea>
+                <textarea name="address" id="pAddress" cols="30" rows="7" required></textarea>
                 <br>
                 <br>
                 <label for="DOB">Date of Birth</label>
                 <br>
-                <input type="date" name="DOB" id="DOB" min="1900-12-31" max="2020-01-01">
+                <input type="date" name="DOB" id="DOB" min="1900-12-31" max="2020-01-01" required>
                 <br>
                 <br>
                 <p>Civil Status</p>
 
-                <input type="radio" name="marriage" id="married">
+                <input type="radio" name="marriage" id="married" required>
                 <label for="married">Married</label>
 
-                <input type="radio" name="marriage" id="unmarried">
+                <input type="radio" name="marriage" id="unmarried" required>
                 <label for="unmarried">Unmarried</label>
                 <br>
                 <br>
 
                 <p>Nationality</p>
 
-                <input type="radio" name="nationality" id="Sinhala">
+                <input type="radio" name="nationality" id="Sinhala" required>
                 <label for="Sinhala">Sinhala</label> &nbsp;
-                <input type="radio" name="nationality" id="Tamil">
+                <input type="radio" name="nationality" id="Tamil" required>
                 <label for="Tamil">Tamil</label> &nbsp;
-                <input type="radio" name="nationality" id="Muslim">
+                <input type="radio" name="nationality" id="Muslim" required>
                 <label for="Muslim">Muslim</label> &nbsp;
-                <input type="radio" name="nationality" id="Burger">
+                <input type="radio" name="nationality" id="Burger" required>
                 <label for="Burger">Burger</label> &nbsp;
-                <input type="radio" name="nationality" id="Other">
+                <input type="radio" name="nationality" id="Other" required>
                 <label for="Other">Other</label>
                 <br><br>
                 <p>Religion</p>

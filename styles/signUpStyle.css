@@ -232,3 +232,11 @@ body {
 #NIC {
     position: relative;
 }
+
+.mainFieldset {
+    font-weight: lighter;
+}
+
+.mainFieldset legend {
+    font-weight: bold;
+}
