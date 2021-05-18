@@ -49,7 +49,6 @@
             <fieldset class="mainFieldset">
                 <legend>Personal Information</legend>
                 <br>
-                <br>
                 <label for="fullName">Full Name</label>
                 <input type="text" name="fullName" id="fullName">
                 <br>
@@ -67,7 +66,7 @@
                 <br>
                 <br>
                 <label for="DOB">Date of Birth</label>
-                <input type="date" name="DOB" id="DOB">
+                <input type="date" name="DOB" id="DOB" min="1900-12-31" max="2020-01-01">
                 <br>
                 <br>
                 <p>Civil Status</p>
@@ -150,7 +149,7 @@
                     <br>
                     <br>
                     <label for="anTurnover">Annual Turnover - Rs.</label>
-                    <input type="number" name="anTurnover" id="anTurnover">
+                    <input type="number" name="anTurnover" id="anTurnover" min="0"> .00
                     <br>
                     <br>
                 </fieldset>
@@ -164,7 +163,7 @@
                     <br>
                     <br>
                     <label for="anTurnover">Annual Turnover - Rs.</label>
-                    <input type="number" name="anTurnover" id="anTurnover">
+                    <input type="number" name="anTurnover" id="anTurnover" min="0"> .00
                     <br>
                     <br>
                 </fieldset>
@@ -174,24 +173,24 @@
             <fieldset class="mainFieldset">
                 <br>
                 <legend>Monthly Income</legend>
-                <label for=" empIncome ">Gross Salary if Employed - Rs.</label>
-                <input type="number " name="empIncome " id="empIncome ">
+                <label for=" empIncome">Gross Salary if Employed - Rs.</label>
+                <input type="number" name="empIncome" id="empIncome" min="0"> .00
                 <br><br>
-                <label for="empIncome ">Gross Income from Business/Self Employement - Rs.</label>
-                <input type="number " name="busSelfIncome " id="busSelfIncome ">
+                <label for="empIncome">Gross Income from Business/Self Employement - Rs.</label>
+                <input type="number" name="busSelfIncome" id="busSelfIncome" min="0"> .00
                 <br>
                 <br>
-                <label for="otherIncome ">Income from other sources - Rs.</label>
-                <input type="number " name="otherIncome " id="otherIncome ">
+                <label for="otherIncome">Income from other sources - Rs.</label>
+                <input type="number" name="otherIncome" id="otherIncome" min="0"> .00
                 <br><br>
-                <label for="totIncome ">Total/Gross Income - Rs.</label>
-                <input type="number " name="totIncome " id="totIncome ">
+                <label for="totIncome">Total/Gross Income - Rs.</label>
+                <input type="number" name="totIncome" id="totIncome" min="0"> .00
                 <br><br>
-                <label for="totMonDed ">Total Monthly deductions and Expenditure - Rs.</label>
-                <input type="number " name="totMonDed " id="totMonDed ">
+                <label for="totMonDed">Total Monthly deductions and Expenditure - Rs.</label>
+                <input type="number" name="totMonDed" id="totMonDed" min="0"> .00
                 <br><br>
-                <label for="netIncome ">Net Income - Rs.</label>
-                <input type="number " name="netIncome " id="netIncome ">
+                <label for="netIncome">Net Income - Rs.</label>
+                <input type="number" name="netIncome" id="netIncome" min="0"> .00
                 <br>
                 <br>
             </fieldset>
@@ -201,43 +200,43 @@
     <!-- 
     <footer>
 
-        <section id="boxes ">
-            <section id="end ">
-                <div class="container ">
-                    <div class="box ">
-                        <div id="legacy ">
+        <section id="boxes">
+            <section id="end">
+                <div class="container">
+                    <div class="box">
+                        <div id="legacy">
                             <h3>Easy Sri Lanka Insurance Pvt(ltd)</h3>
                             <p>Since 1987, Easy Sri Lanka Insurance Pvt(ltd) is reputed as a huge cooperation in the insurance sector. While looking after Sri Lankans when they need us the most, our company is giving an immense contribution to the economy
                                 as well.
                             </p>
                         </div>
                     </div>
-                    <div class="box ">
-                        <div id="contactInfo ">
+                    <div class="box">
+                        <div id="contactInfo">
                             <ul>
-                                <li><i class="fas fa-map-marker-alt "></i>&nbsp; 106,Havelock Road,Colombo 05</li>
+                                <li><i class="fas fa-map-marker-alt"></i>&nbsp; 106,Havelock Road,Colombo 05</li>
                                 <br>
-                                <li><i class="fas fa-phone-square-alt "></i> &nbsp;0112 461 461</li>
+                                <li><i class="fas fa-phone-square-alt"></i> &nbsp;0112 461 461</li>
                                 <br>
-                                <li><i class="fas fa-envelope "></i> &nbsp;easysrilanka1@gmail.com</li>
+                                <li><i class="fas fa-envelope"></i> &nbsp;easysrilanka1@gmail.com</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="box ">
-                        <div id="social ">
+                    <div class="box">
+                        <div id="social">
                             <h4>Follow Us On Social Media</h4>
                             <br>
                             <ul>
                                 <li>
-                                    <a href="https://twitter.com/SriEasy "><i class="fab fa-twitter-square "></i>&nbsp;Twitter</a>
+                                    <a href="https://twitter.com/SriEasy"><i class="fab fa-twitter-square"></i>&nbsp;Twitter</a>
                                 </li>
 
                                 <li>
-                                    <a href="https://www.facebook.com/EasySriLanka/ "><i class="fab fa-facebook-square "></i>&nbsp;Facebook</a>
+                                    <a href="https://www.facebook.com/EasySriLanka/"><i class="fab fa-facebook-square"></i>&nbsp;Facebook</a>
                                 </li>
 
                                 <li>
-                                    <a href="https://www.youtube.com/channel/UCn034vqtqCiakhtZc9N_F4g "><i class="fab fa-youtube "></i>Youtube</a>
+                                    <a href="https://www.youtube.com/channel/UCn034vqtqCiakhtZc9N_F4g"><i class="fab fa-youtube"></i>Youtube</a>
                                 </li>
                             </ul>
                         </div>
@@ -247,7 +246,7 @@
 
 
         </section>
-        <div id="copyrights ">
+        <div id="copyrights">
             <p>&copy; 2021 Easy Sri Lanka Health Insurance Pvt(ltd). All rights reserved.</p>
         </div>
 
