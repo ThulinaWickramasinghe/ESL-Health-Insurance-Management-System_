@@ -11,7 +11,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
 }
 
 #signIn,
@@ -207,4 +206,20 @@ body {
 
 #social ul li a :hover {
     color: darkolivegreen;
+}
+
+.mainFieldset {
+    position: relative;
+    width: 50%;
+    margin: 20px;
+    margin-left: 5%;
+    padding: 30px;
+    padding-left: auto;
+}
+
+.subFieldset {
+    position: relative;
+    padding: 15px;
+    padding-left: auto;
+    margin: 10px;
 }

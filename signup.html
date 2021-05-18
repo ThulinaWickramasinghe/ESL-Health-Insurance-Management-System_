@@ -38,12 +38,15 @@
         </div>
     </header>
 
-    <div style="height: 60vh; font-weight: bold; margin-top: 20px">
+    <div style="height: 100vh; font-weight: bold; margin-top: 20px ;">
         <!-- <p>CONTENT OF THE PAGE</p> -->
         <h2>Register for an account</h2>
+        <br>
         <form action="">
 
-            <fieldset>
+
+            <br>
+            <fieldset class="mainFieldset">
                 <legend>Personal Information</legend>
                 <br>
                 <br>
@@ -68,46 +71,49 @@
                 <br>
                 <br>
                 <p>Civil Status</p>
-                <label for="married">Married</label>
+
                 <input type="radio" name="marriage" id="married">
-                <label for="unmarried">Unmarried</label>
+                <label for="married">Married</label>
+
                 <input type="radio" name="marriage" id="unmarried">
+                <label for="unmarried">Unmarried</label>
                 <br>
                 <br>
 
                 <p>Nationality</p>
-                <label for="Sinhala">Sinhala</label>
+
                 <input type="radio" name="nationality" id="Sinhala">
-                <label for="Tamil">Tamil</label>
+                <label for="Sinhala">Sinhala</label> &nbsp;
                 <input type="radio" name="nationality" id="Tamil">
-                <label for="Muslim">Muslim</label>
+                <label for="Tamil">Tamil</label> &nbsp;
                 <input type="radio" name="nationality" id="Muslim">
-                <label for="Burger">Burger</label>
+                <label for="Muslim">Muslim</label> &nbsp;
                 <input type="radio" name="nationality" id="Burger">
-                <label for="Other">Other</label>
+                <label for="Burger">Burger</label> &nbsp;
                 <input type="radio" name="nationality" id="Other">
+                <label for="Other">Other</label>
                 <br><br>
-                <p>Religion
-                    <label for="Budhdhism">Budhdhism</label>
-                    <input type="radio" name="Religion" id="Sinhala">
-                    <label for="Hinduism">Hinduism</label>
-                    <input type="radio" name="Religion" id="Hinduism">
-                    <label for="Islam">Islam</label>
-                    <input type="radio" name="Religion" id="Islam">
-                    <label for="Christianity">Christianity</label>
-                    <input type="radio" name="Religion" id="Christianity">
-                    <label for="Other">Other</label>
-                    <input type="radio" name="Religion" id="Other">
+                <p>Religion</p>
+                <input type="radio" name="Religion" id="Sinhala">
+                <label for="Budhdhism">Budhdhism</label> &nbsp;
+                <input type="radio" name="Religion" id="Hinduism">
+                <label for="Hinduism">Hinduism</label> &nbsp;
+                <input type="radio" name="Religion" id="Islam">
+                <label for="Islam">Islam</label>
+                <input type="radio" name="Religion" id="Christianity">
+                <label for="Christianity">Christianity</label>
+                <input type="radio" name="Religion" id="Other">
+                <label for="Other">Other</label><br><br>
             </fieldset>
-
-
-            <fieldset>
+            <br>
+            <br>
+            <fieldset class="mainFieldset">
                 <legend>Source of Income</legend>
                 <br>
-                <br>
-                <fieldset>
+                <fieldset class="subFieldset">
                     <legend>Employment</legend>
-                    <label for="empName">Name of the Employer</label>
+                    <br>
+                    <label for=" empName">Name of the Employer</label>
                     <input type="text" name="empName" id="empName">
                     <br>
                     <br>
@@ -115,22 +121,25 @@
                     <br>
                     <textarea name="empAddress" id="empAddress" cols="30" rows="7"></textarea>
                     <br>
+                    <br>
                     <label for="designation">Designation</label>
-                    <input type="radio" name="marriage" id="designation">
+                    <input type="text" name="marriage" id="designation">
+                    <br><br>
                     <label for="empPeriod">Period of Employment(in years)</label>
                     <input type="number" name="empPeriod" id="empPeriod" min="1" max="100">
                     <br>
                     <br>
-                    <label for="NIC">NIC Number</label>
-                    <input type="" name="NIC" id="NIC">
                 </fieldset>
 
+                <br>
 
-
-                <fieldset>
+                <fieldset class="subFieldset">
                     <legend>Business</legend>
+                    <br>
                     <label for="busName">Name of Business</label>
                     <input type="text" name="busName" id="busName">
+                    <br>
+                    <br>
                     <label for="busType">Type of Business</label>
                     <input type="text" name="busType" id="busType">
                     <br>
@@ -140,56 +149,71 @@
                     <textarea name="empAddress" id="empAddress" cols="30" rows="7"></textarea>
                     <br>
                     <br>
-                    <label for="anTurnover">Annual Turnover(in ruppees)</label>
+                    <label for="anTurnover">Annual Turnover - Rs.</label>
                     <input type="number" name="anTurnover" id="anTurnover">
+                    <br>
+                    <br>
                 </fieldset>
-                <fieldset>
+                <br>
+                <fieldset class="subFieldset">
                     <legend>Self-employment</legend>
                     <br>
                     <label for="sEmpName">Nature of Self Employment</label>
+                    <br>
                     <textarea name="sEmpName" id="sEmpName" cols="30" rows="5"></textarea>
                     <br>
-                    <label for="anTurnover">Annual Turnover(in ruppees)</label>
+                    <br>
+                    <label for="anTurnover">Annual Turnover - Rs.</label>
                     <input type="number" name="anTurnover" id="anTurnover">
                     <br>
-                    <label for="empPeriod">Period of Employment(in years)</label>
-                    <input type="number" name="empPeriod" id="empPeriod" min="1" max="100">
+                    <br>
                 </fieldset>
+                <br>
             </fieldset>
-            <fieldset>
+            <br>
+            <fieldset class="mainFieldset">
+                <br>
                 <legend>Monthly Income</legend>
-                <label for="empIncome">Gross Salary if Employed(in ruppees)</label>
-                <input type="number" name="empIncome" id="empIncome">
-                <label for="empIncome">Gross Income from Business/Self Employement(in ruppees)</label>
-                <input type="number" name="busSelfIncome" id="busSelfIncome">
-                <label for="otherIncome">Income from other sources(in ruppees)</label>
-                <input type="number" name="otherIncome" id="otherIncome">
-                <label for="totIncome">Total/Gross Income(in ruppees)</label>
-                <input type="number" name="totIncome" id="totIncome">
-                <label for="totMonDed">Total Monthly deductions and Expenditure(in ruppees)</label>
-                <input type="number" name="totMonDed" id="totMonDed">
-                <label for="netIncome">Net Income(in ruppees)</label>
-                <input type="number" name="netIncome" id="netIncome">
-
+                <label for=" empIncome ">Gross Salary if Employed - Rs.</label>
+                <input type="number " name="empIncome " id="empIncome ">
+                <br><br>
+                <label for="empIncome ">Gross Income from Business/Self Employement - Rs.</label>
+                <input type="number " name="busSelfIncome " id="busSelfIncome ">
+                <br>
+                <br>
+                <label for="otherIncome ">Income from other sources - Rs.</label>
+                <input type="number " name="otherIncome " id="otherIncome ">
+                <br><br>
+                <label for="totIncome ">Total/Gross Income - Rs.</label>
+                <input type="number " name="totIncome " id="totIncome ">
+                <br><br>
+                <label for="totMonDed ">Total Monthly deductions and Expenditure - Rs.</label>
+                <input type="number " name="totMonDed " id="totMonDed ">
+                <br><br>
+                <label for="netIncome ">Net Income - Rs.</label>
+                <input type="number " name="netIncome " id="netIncome ">
+                <br>
+                <br>
             </fieldset>
+            <br>
         </form>
     </div>
     <!-- 
     <footer>
 
-        <section id="boxes">
-            <section id="end">
-                <div class="container">
-                    <div class="box">
-                        <div id="legacy">
+        <section id="boxes ">
+            <section id="end ">
+                <div class="container ">
+                    <div class="box ">
+                        <div id="legacy ">
                             <h3>Easy Sri Lanka Insurance Pvt(ltd)</h3>
                             <p>Since 1987, Easy Sri Lanka Insurance Pvt(ltd) is reputed as a huge cooperation in the insurance sector. While looking after Sri Lankans when they need us the most, our company is giving an immense contribution to the economy
                                 as well.
                             </p>
                         </div>
                     </div>
-                    <div class="box">
-                        <div id="contactInfo">
+                    <div class="box ">
+                        <div id="contactInfo ">
                             <ul>
                                 <li><i class="fas fa-map-marker-alt "></i>&nbsp; 106,Havelock Road,Colombo 05</li>
                                 <br>
@@ -199,8 +223,8 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="box">
-                        <div id="social">
+                    <div class="box ">
+                        <div id="social ">
                             <h4>Follow Us On Social Media</h4>
                             <br>
                             <ul>
@@ -223,7 +247,7 @@
 
 
         </section>
-        <div id="copyrights">
+        <div id="copyrights ">
             <p>&copy; 2021 Easy Sri Lanka Health Insurance Pvt(ltd). All rights reserved.</p>
         </div>
 
