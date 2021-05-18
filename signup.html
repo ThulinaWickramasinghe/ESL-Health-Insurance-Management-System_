@@ -54,12 +54,12 @@
                 <br>
                 <label for="NIC">NIC Number</label>
                 <br>
-                <input type="text" name="NIC" id="NIC" maxlength="10">
+                <input type="text" name="NIC" id="NIC" maxlength="12" pattern="/(^[0-9]{9}[V,X]$)|(^[0-9]{12}$)/i">
                 <br>
                 <br>
                 <label for="pTpNo">Telephone Number(Private)</label>
                 <br>
-                <input type="tel" name="pTpNo" id="pTpNo" pattern="">
+                <input type="tel" name="pTpNo" id="pTpNo" pattern="/^[0-9]{10}$/">
                 <br>
                 <br>
                 <label for="NIC">Address(Residential/Permanent)</label><br>
