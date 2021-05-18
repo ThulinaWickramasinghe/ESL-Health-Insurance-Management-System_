@@ -225,9 +225,10 @@ body {
     margin: 10px;
 }
 
-#fullName {
+
+/* #fullName {
     width: 45vw;
-}
+} */
 
 #NIC {
     position: relative;
@@ -239,4 +240,27 @@ body {
 
 .mainFieldset legend {
     font-weight: bold;
+}
+
+input,
+textarea {
+    border: none;
+    background-color: #f1f1f1;
+    width: 90%;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="email"] {
+    height: 35px;
+}
+
+input[type="radio"] {
+    width: auto;
+}
+
+.radio {
+    position: relative;
+    margin-left: 20px;
 }
