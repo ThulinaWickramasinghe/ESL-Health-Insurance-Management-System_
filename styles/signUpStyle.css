@@ -224,3 +224,11 @@ body {
     padding-left: auto;
     margin: 10px;
 }
+
+#fullName {
+    width: 45vw;
+}
+
+#NIC {
+    position: relative;
+}

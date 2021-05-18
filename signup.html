@@ -48,16 +48,17 @@
             <br>
             <fieldset class="mainFieldset">
                 <legend>Personal Information</legend>
-                <br>
                 <label for="fullName">Full Name</label>
                 <input type="text" name="fullName" id="fullName">
                 <br>
                 <br>
                 <label for="NIC">NIC Number</label>
-                <input type="text" name="NIC" id="NIC">
+                <br>
+                <input type="text" name="NIC" id="NIC" maxlength="10">
                 <br>
                 <br>
                 <label for="pTpNo">Telephone Number(Private)</label>
+                <br>
                 <input type="tel" name="pTpNo" id="pTpNo" pattern="">
                 <br>
                 <br>
@@ -66,6 +67,7 @@
                 <br>
                 <br>
                 <label for="DOB">Date of Birth</label>
+                <br>
                 <input type="date" name="DOB" id="DOB" min="1900-12-31" max="2020-01-01">
                 <br>
                 <br>
@@ -113,6 +115,7 @@
                     <legend>Employment</legend>
                     <br>
                     <label for=" empName">Name of the Employer</label>
+                    <br>
                     <input type="text" name="empName" id="empName">
                     <br>
                     <br>
@@ -122,10 +125,12 @@
                     <br>
                     <br>
                     <label for="designation">Designation</label>
+                    <br>
                     <input type="text" name="marriage" id="designation">
                     <br><br>
                     <label for="empPeriod">Period of Employment(in years)</label>
-                    <input type="number" name="empPeriod" id="empPeriod" min="1" max="100">
+                    <br>
+                    <input type="number" name="empPeriod" id="empPeriod" min="0" max="100">
                     <br>
                     <br>
                 </fieldset>
@@ -136,10 +141,12 @@
                     <legend>Business</legend>
                     <br>
                     <label for="busName">Name of Business</label>
+                    <br>
                     <input type="text" name="busName" id="busName">
                     <br>
                     <br>
                     <label for="busType">Type of Business</label>
+                    <br>
                     <input type="text" name="busType" id="busType">
                     <br>
                     <br>
@@ -148,10 +155,12 @@
                     <textarea name="empAddress" id="empAddress" cols="30" rows="7"></textarea>
                     <br>
                     <br>
-                    <label for="anTurnover">Annual Turnover - Rs.</label>
+                    <label for="anTurnover">Annual Turnover</label>
+                    <br> Rs.
                     <input type="number" name="anTurnover" id="anTurnover" min="0"> .00
                     <br>
                     <br>
+
                 </fieldset>
                 <br>
                 <fieldset class="subFieldset">
@@ -162,10 +171,14 @@
                     <textarea name="sEmpName" id="sEmpName" cols="30" rows="5"></textarea>
                     <br>
                     <br>
-                    <label for="anTurnover">Annual Turnover - Rs.</label>
+                    <label for="anTurnover">Annual Turnover</label>
+                    <br> Rs.
                     <input type="number" name="anTurnover" id="anTurnover" min="0"> .00
                     <br>
                     <br>
+                    <label for="sPeriod">Period in Self-employment(in years)</label>
+                    <br>
+                    <input type="number" name="busType" id="busType" min="0" max="100">
                 </fieldset>
                 <br>
             </fieldset>
@@ -173,23 +186,29 @@
             <fieldset class="mainFieldset">
                 <br>
                 <legend>Monthly Income</legend>
-                <label for=" empIncome">Gross Salary if Employed - Rs.</label>
+                <label for=" empIncome">Gross Salary if Employed</label>
+                <br> Rs.
                 <input type="number" name="empIncome" id="empIncome" min="0"> .00
                 <br><br>
-                <label for="empIncome">Gross Income from Business/Self Employement - Rs.</label>
+                <label for="empIncome">Gross Income from Business/Self Employement</label>
+                <br> Rs.
                 <input type="number" name="busSelfIncome" id="busSelfIncome" min="0"> .00
                 <br>
                 <br>
-                <label for="otherIncome">Income from other sources - Rs.</label>
+                <label for="otherIncome">Income from other sources</label>
+                <br> Rs.
                 <input type="number" name="otherIncome" id="otherIncome" min="0"> .00
                 <br><br>
-                <label for="totIncome">Total/Gross Income - Rs.</label>
+                <label for="totIncome">Total/Gross Income</label>
+                <br> Rs.
                 <input type="number" name="totIncome" id="totIncome" min="0"> .00
                 <br><br>
-                <label for="totMonDed">Total Monthly deductions and Expenditure - Rs.</label>
+                <label for="totMonDed">Total Monthly deductions and Expenditure</label>
+                <br> Rs.
                 <input type="number" name="totMonDed" id="totMonDed" min="0"> .00
                 <br><br>
-                <label for="netIncome">Net Income - Rs.</label>
+                <label for="netIncome">Net Income</label>
+                <br> Rs.
                 <input type="number" name="netIncome" id="netIncome" min="0"> .00
                 <br>
                 <br>
