@@ -51,6 +51,18 @@
                 <input type="text" name="fullName" id="fullName">
                 <br>
                 <br>
+                <label for="NIC">NIC Number</label>
+                <input type="text" name="NIC" id="NIC">
+                <br>
+                <br>
+                <label for="pTpNo">Telephone Number(Private)</label>
+                <input type="tel" name="pTpNo" id="pTpNo" pattern="">
+                <br>
+                <br>
+                <label for="NIC">Address(Residential/Permanent)</label><br>
+                <textarea name="address" id="pAddress" cols="30" rows="7"></textarea>
+                <br>
+                <br>
                 <label for="DOB">Date of Birth</label>
                 <input type="date" name="DOB" id="DOB">
                 <br>
@@ -62,10 +74,7 @@
                 <input type="radio" name="marriage" id="unmarried">
                 <br>
                 <br>
-                <label for="NIC">NIC Number</label>
-                <input type="text" name="NIC" id="NIC">
-                <br>
-                <br>
+
                 <p>Nationality</p>
                 <label for="Sinhala">Sinhala</label>
                 <input type="radio" name="nationality" id="Sinhala">
@@ -108,16 +117,61 @@
                     <br>
                     <label for="designation">Designation</label>
                     <input type="radio" name="marriage" id="designation">
-                    <label for="unmarried">Unmarried</label>
-                    <input type="radio" name="marriage" id="unmarried">
+                    <label for="empPeriod">Period of Employment(in years)</label>
+                    <input type="number" name="empPeriod" id="empPeriod" min="1" max="100">
                     <br>
                     <br>
                     <label for="NIC">NIC Number</label>
-                    <input type="text" name="NIC" id="NIC">
+                    <input type="" name="NIC" id="NIC">
                 </fieldset>
 
-            </fieldset>
 
+
+                <fieldset>
+                    <legend>Business</legend>
+                    <label for="busName">Name of Business</label>
+                    <input type="text" name="busName" id="busName">
+                    <label for="busType">Type of Business</label>
+                    <input type="text" name="busType" id="busType">
+                    <br>
+                    <br>
+                    <label for="busAddress">Business Address</label>
+                    <br>
+                    <textarea name="empAddress" id="empAddress" cols="30" rows="7"></textarea>
+                    <br>
+                    <br>
+                    <label for="anTurnover">Annual Turnover(in ruppees)</label>
+                    <input type="number" name="anTurnover" id="anTurnover">
+                </fieldset>
+                <fieldset>
+                    <legend>Self-employment</legend>
+                    <br>
+                    <label for="sEmpName">Nature of Self Employment</label>
+                    <textarea name="sEmpName" id="sEmpName" cols="30" rows="5"></textarea>
+                    <br>
+                    <label for="anTurnover">Annual Turnover(in ruppees)</label>
+                    <input type="number" name="anTurnover" id="anTurnover">
+                    <br>
+                    <label for="empPeriod">Period of Employment(in years)</label>
+                    <input type="number" name="empPeriod" id="empPeriod" min="1" max="100">
+                </fieldset>
+            </fieldset>
+            <fieldset>
+                <legend>Monthly Income</legend>
+                <label for="empIncome">Gross Salary if Employed(in ruppees)</label>
+                <input type="number" name="empIncome" id="empIncome">
+                <label for="empIncome">Gross Income from Business/Self Employement(in ruppees)</label>
+                <input type="number" name="busSelfIncome" id="busSelfIncome">
+                <label for="otherIncome">Income from other sources(in ruppees)</label>
+                <input type="number" name="otherIncome" id="otherIncome">
+                <label for="totIncome">Total/Gross Income(in ruppees)</label>
+                <input type="number" name="totIncome" id="totIncome">
+                <label for="totMonDed">Total Monthly deductions and Expenditure(in ruppees)</label>
+                <input type="number" name="totMonDed" id="totMonDed">
+                <label for="netIncome">Net Income(in ruppees)</label>
+                <input type="number" name="netIncome" id="netIncome">
+
+            </fieldset>
         </form>
     </div>
     <!-- 
