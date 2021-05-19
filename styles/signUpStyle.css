@@ -114,7 +114,8 @@ body {
 
 /* Add responsiveness - On small screens, display the navbar vertically instead of horizontally */
 
-@media screen and (max-width: 600px) {
+
+/* @media screen and (max-width: 600px) {
     .topnav .login-container {
         float: none;
     }
@@ -131,7 +132,7 @@ body {
     .topnav input {
         border: 1px solid #ccc;
     }
-}
+} */
 
 #wadana {
     color: beige;
@@ -266,7 +267,7 @@ textarea {
 .mainFieldset input[type="password"],
 select {
     height: 35px;
-    font-size: medium;
+    font-size: large;
     border: none;
     background-color: #f1f1f1;
     width: 90%;
@@ -327,4 +328,9 @@ input[type="radio"] {
     border-radius: 100px;
     background-color: lightgrey;
     left: 270px;
+}
+
+#insAccDetails input {
+    text-align: center;
+    font-
 }
