@@ -287,10 +287,14 @@
                                 <input type="text" name="branchName" id="branchName">
                             </td>
                             <td>
-                                <input type="number" name="accNum" id="accNum">
+                                <input type="number" name="accNum" id="accNum" min="0">
                             </td>
                             <td>
-                                <input type="text" name="accType" id="accType">
+                                <select name="accType" id="accType">
+                                    <option value="savings">Saving</option>
+                                    <option value="fixed_deposit">Fixed Deposit</option>
+                                    <option value="current">Current</option>
+                                </select>
                             </td>
                         </tr>
                     </tbody>
