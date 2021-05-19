@@ -38,14 +38,12 @@
         </div>
     </header>
 
-    <div style="height: 100vh; font-weight: bold; margin-top: 20px ;">
-        <!-- <p>CONTENT OF THE PAGE</p> -->
+    <div style="height: 100vh; font-weight: bold; margin-top: 20px;">
+        <br>
+        <br>
         <h2 id="regHead">Register for an account</h2>
         <br>
         <form action="">
-
-
-            <br>
             <fieldset class="mainFieldset">
                 <legend>Personal Information</legend>
                 <label for="fullName">Full Name</label>
@@ -239,6 +237,59 @@
                 <br>
             </fieldset>
             <br>
+            <fieldset class="mainFieldset">
+                <br>
+                <legend>Details of Bank Accounts</legend>
+                <table>
+                    <thead>
+                        <th>Name of the bank</th>
+                        <th>Name of the branch</th>
+                        <th>Account number</th>
+                        <th>Account type</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><select name="selectBankName" id="selectBankName">
+                                <option value="Amana_Bank">Amana Bank</option>
+                                <option value="Bank_of_Ceylon">Bank of Ceylon</option>
+                                <option value="Bank_of_China_Limited">Bank of China Limited</option>
+                                <option value="Cargills_Bank_Limited">Cargills Bank Limited</option>
+                                <option value="Citibank_N.A.">Citibank N.A.</option>
+                                <option value="Commercial_Bank_of_Ceylon">Commercial Bank of Ceylon</option>
+                                <option value="Deutsch_Bank_AG">Deutsche Bank AG</option>
+                                <option value="DFCC_Bank_PLC">DFCC Bank PLC</option>
+                                <option value="Habib_Bank_Ltd">Habib Bank Ltd</option>
+                                <option value="Hatton_National_Bank_PLC">Hatton National Bank PLC</option>
+                                <option value="Indian_Bank">Indian Bank</option>
+                                <option value="Indian_Overseas_Bank">Indian Overseas Bank</option>
+                                <option value="MCB_Bank_Ltd">MCB Bank Ltd</option>
+                                <option value="National_Development_Bank">National Development Bank</option>
+                                <option value="Nations_Trust_Bank_PLC">Nations Trust Bank PLC</option>
+                                <option value="Pan_Asia_Banking_Corporation">Pan Asia Banking Corporation</option>
+                                <option value="People's_Bank">People's Bank</option>
+                                <option value="Public_Bank_Berhad">Public Bank Berhad</option>
+                                <option value="Sampath_Bank_PLC">Sampath Bank PLC</option>
+                                <option value="Seylan_Bank_PLC">Seylan Bank PLC</option>
+                                <option value="Standard_Chartered_Bank">Standard Chartered Bank</option>
+                                <option value="State_Bank_of_India">State Bank of India</option>
+                                <option value="HSBC">HSBC</option>
+                                <option value="Union_Bank_of_Colombo_PLC">Union Bank of Colombo PLC</option>
+                                <option value="HDFC">HDFC</option>
+                                <option value="NSB">NSB</option>
+                                <option value="RDB">RDB</option>
+                                <option value="SLS">SLS</option>
+                                <option value="SMIB">SMIB</option>
+                                <option value="SDB_Bank_&_U_pay">SDB Bank & U pay</option>
+
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- <label for="bankName">Name of the bank where the account is maintained</label>
+
+                <input type="text" name="bankName" id="bankName"> -->
+            </fieldset>
             <fieldset class="mainFieldset">
                 <legend>Documents</legend>
                 <p id="rqrd">*All fields are required.</p>
