@@ -263,7 +263,8 @@ textarea {
 .mainFieldset input[type="number"],
 .mainFieldset input[type="tel"],
 .mainFieldset input[type="email"],
-.mainFieldset input[type="password"] {
+.mainFieldset input[type="password"],
+select {
     height: 35px;
     font-size: medium;
     border: none;
@@ -305,4 +306,15 @@ input[type="radio"] {
 #regHead {
     position: relative;
     left: 20%;
+}
+
+#termsDiv {
+    position: relative;
+    margin: 40px;
+}
+
+#rqrd {
+    color: red;
+    font-family: sans-serif;
+    font-size: small;
 }

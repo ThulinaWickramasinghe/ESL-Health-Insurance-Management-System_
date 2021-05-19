@@ -50,16 +50,19 @@
                 <legend>Personal Information</legend>
                 <label for="fullName">Full Name</label>
                 <input type="text" name="fullName" id="fullName" required>
+                <p id="rqrd">*Required</p>
                 <br>
                 <br>
                 <label for="NIC">NIC Number</label>
                 <br>
                 <input type="text" name="NIC" id="NIC" maxlength="12" pattern="/(^[0-9]{9}[V,X]$)|(^[0-9]{12}$)/i" required>
+                <p id="rqrd">*Required</p>
                 <br>
                 <br>
                 <label for="pTpNo">Telephone Number(Private)</label>
                 <br>
                 <input type="tel" name="pTpNo" id="pTpNo" pattern="/^[0-9]{10}$/" maxlength="10">
+                <p id="rqrd">*Required</p>
                 <br>
                 <br>
                 <label for="pTpNo">Email Address</label>
@@ -69,20 +72,22 @@
                 <br>
                 <label for="NIC">Address(Residential/Permanent)</label><br>
                 <textarea name="address" id="pAddress" cols="30" rows="7" required></textarea>
+                <p id="rqrd">*Required</p>
                 <br>
                 <br>
                 <label for="DOB">Date of Birth</label>
                 <br>
                 <input type="date" name="DOB" id="DOB" min="1900-12-31" max="2020-01-01" required>
+                <p id="rqrd">*Required</p>
                 <br>
                 <br>
                 <p>Civil Status</p>
-
                 <input type="radio" name="marriage" id="married" required class="radio">
                 <label for="married">Married</label>
 
                 <input type="radio" name="marriage" id="unmarried" class="radio" required>
                 <label for="unmarried">Unmarried</label>
+                <p id="rqrd">*Required</p>
                 <br>
                 <br>
 
@@ -98,10 +103,11 @@
                 <label for="Burger">Burger</label><br>
                 <input type="radio" name="nationality" id="Other" class="radio" required>
                 <label for="Other">Other</label>
+                <p id="rqrd">*Required</p>
                 <br><br>
                 <p>Religion</p>
 
-                <input type="radio" name="Religion" id="Sinhala" class="radio">
+                <input type="radio" name="Religion" id="Budhdhism" class="radio">
                 <label for="Budhdhism">Budhdhism</label>
                 <br>
                 <input type="radio" name="Religion" id="Hinduism" class="radio">
@@ -111,15 +117,17 @@
                 <input type="radio" name="Religion" id="Christianity" class="radio">
                 <label for="Christianity">Christianity</label><br>
                 <input type="radio" name="Religion" id="Other" class="radio">
-                <label for="Other">Other</label><br><br>
+                <label for="Other">Other</label>
+                <p id="rqrd">*Required</p>
+                <br><br>
             </fieldset>
             <br>
             <br>
             <fieldset class="mainFieldset">
                 <legend>Source of Income</legend>
-
                 <fieldset class="subFieldset">
                     <legend>Employment</legend>
+                    <p id="rqrd">*All the fields are required if employed.</p>
                     <br>
                     <label for="empName">Name of the Employer</label>
                     <br>
@@ -146,7 +154,9 @@
 
                 <fieldset class="subFieldset">
                     <legend>Business</legend>
+                    <p id="rqrd">*All the fields are required if you are a business owner.</p>
                     <br>
+
                     <label for="busName">Name of Business</label>
                     <br>
                     <input type="text" name="busName" id="busName">
@@ -172,7 +182,9 @@
                 <br>
                 <fieldset class="subFieldset">
                     <legend>Self-employment</legend>
+                    <p id="rqrd">*All the fields are required if you are Self-employed.</p>
                     <br>
+
                     <label for="sEmpName">Nature of Self Employment</label>
                     <br>
                     <textarea name="sEmpName" id="sEmpName" cols="30" rows="5"></textarea>
@@ -193,14 +205,17 @@
             <fieldset class="mainFieldset">
                 <br>
                 <legend>Monthly Income</legend>
+
                 <label for=" empIncome">Gross Salary if Employed</label>
                 <br>
                 <input type="number" name="empIncome" id="empIncome" min="0" placeholder="Rs."> .00
-                <br><br>
+                <br>
+                <p id="rqrd">*Required if employed.</p><br>
                 <label for="empIncome">Gross Income from Business/Self Employement</label>
                 <br>
                 <input type="number" name="busSelfIncome" id="busSelfIncome" min="0" placeholder="Rs."> .00
                 <br>
+                <p id="rqrd">*Required if you are a business owner or if you are self employed.</p><br>
                 <br>
                 <label for="otherIncome">Income from other sources</label>
                 <br>
@@ -209,20 +224,24 @@
                 <label for="totIncome">Total/Gross Income</label>
                 <br>
                 <input type="number" name="totIncome" id="totIncome" min="0" placeholder="Rs."> .00
-                <br><br>
+                <br>
+                <p id="rqrd">*Required</p><br>
                 <label for="totMonDed">Total Monthly deductions and Expenditure</label>
                 <br>
                 <input type="number" name="totMonDed" id="totMonDed" min="0" placeholder="Rs."> .00
-                <br><br>
+                <br>
+                <p id="rqrd">*Required</p><br>
                 <label for="netIncome">Net Income</label>
                 <br>
                 <input type="number" name="netIncome" id="netIncome" min="0" placeholder="Rs."> .00
                 <br>
+                <p id="rqrd">*Required</p>
                 <br>
             </fieldset>
             <br>
             <fieldset class="mainFieldset">
                 <legend>Documents</legend>
+                <p id="rqrd">*All fields are required.</p>
                 <fieldset class="subFieldset">
                     <legend>Medical report</legend>
                     <br>
@@ -245,7 +264,30 @@
                     <input type="file" name="medical" id="medical">
                 </fieldset>
             </fieldset>
+
             <fieldset class="mainFieldset">
+                <legend>Insurance Plan</legend>
+                <p id="rqrd">*Required</p>
+                <label for="insPlan">Select your preferred insurance plan</label>
+                <br>
+                <br>
+                <select name="insPlan" id="insPlan">
+                    <option value="">Lorem ipsum dolor1</option>
+                    <option value="">Lorem ipsum dolor2</option>
+                    <option value="">Lorem ipsum dolor3</option>
+                    <option value="">Lorem ipsum dolor4</option>
+                    <option value="">Lorem ipsum dolor5</option>
+                </select>
+                <br>
+                <br>
+                <p>Click
+                    <a href="#">here</a> to learn more about our Insurance plans.
+                </p>
+                <br>
+
+            </fieldset>
+            <fieldset class="mainFieldset">
+                <p id="rqrd">*All fields are required.</p>
                 <legend>Account Details</legend>
                 <br>
                 <label for="userName">Enter a user name for your account(User name can consist of only english simple letters,digits and underscores)</label><br><br>
@@ -254,6 +296,13 @@
                 <input type="password" name="pwd" id="pwd" placeholder="Password"><br><br>
                 <input type="password" name="pwd" id="pwd" placeholder="Re-type password"><br>
             </fieldset>
+            <br>
+            <div id="termsDiv">
+                <input type="checkbox" name="terms" id="terms">
+                <label for="terms">I accept the <a href="#">terms and conditions</a> of this Insurance Policy.</label>
+                <br>
+            </div>
+
             <input type="submit" value="Submit" id="formSubmit">
         </form>
     </div>
