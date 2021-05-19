@@ -287,7 +287,7 @@ input[type="radio"] {
     bottom: 0;
 } */
 
-.mainFieldset input[type="submit"] {
+#formSubmit {
     border: none;
     position: relative;
     height: 6vh;
@@ -300,4 +300,9 @@ input[type="radio"] {
     font-size: x-large;
     margin: 2vw;
     left: 20vw;
+}
+
+#regHead {
+    position: relative;
+    left: 20%;
 }
