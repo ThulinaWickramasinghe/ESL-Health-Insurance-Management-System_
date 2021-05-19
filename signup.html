@@ -240,7 +240,7 @@
             <fieldset class="mainFieldset">
                 <br>
                 <legend>Details of Bank Accounts</legend>
-                <table>
+                <table border="1">
                     <thead>
                         <th>Name of the bank</th>
                         <th>Name of the branch</th>
@@ -280,15 +280,25 @@
                                 <option value="SLS">SLS</option>
                                 <option value="SMIB">SMIB</option>
                                 <option value="SDB_Bank_&_U_pay">SDB Bank & U pay</option>
-
                                 </select>
+                            </td>
+                            <td>
+                                <input type="text" name="branchName" id="branchName">
+                            </td>
+                            <td>
+                                <input type="number" name="accNum" id="accNum">
+                            </td>
+                            <td>
+                                <input type="text" name="accType" id="accType">
                             </td>
                         </tr>
                     </tbody>
                 </table>
+                <br>
+                <button id="addAcc">&nbsp;+&nbsp;</button>
                 <!-- <label for="bankName">Name of the bank where the account is maintained</label>
 
-                <input type="text" name="bankName" id="bankName"> -->
+                        <input type="text" name="bankName" id="bankName"> -->
             </fieldset>
             <fieldset class="mainFieldset">
                 <legend>Documents</legend>
