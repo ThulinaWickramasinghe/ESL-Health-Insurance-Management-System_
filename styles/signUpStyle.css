@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: linear-gradient(rgb(48, 224, 210, 0.2), rgba(48, 224, 210, 0.1)), url("../images/pexels-karolina-grabowska-4397831.jpg");
+    background-image: linear-gradient(rgb(48, 224, 210, 0.2), rgba(48, 224, 210, 0.1)), url("../images/pexels-karolina-grabowska-4397831.jpg"), ;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -340,5 +340,35 @@ input[type="radio"] {
 
 #insAccDetails input {
     text-align: center;
-    font-
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#invalidTpNo {
+    position: relative;
+    float: right;
+    top: -157vh;
+    right: 322px;
+    font-weight: normal;
+    font-family: sans-serif;
+    color: crimson;
+}
+
+#invalidemail {
+    position: relative;
+    float: right;
+    top: -140vh;
+    right: -2px;
+    font-weight: normal;
+    font-family: sans-serif;
+    color: crimson;
+}
+
+#invalidNIC {
+    position: relative;
+    float: right;
+    top: -175vh;
+    right: -189px;
+    font-weight: normal;
+    font-family: sans-serif;
+    color: crimson;
 }

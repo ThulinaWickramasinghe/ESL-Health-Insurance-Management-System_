@@ -60,8 +60,10 @@
                 <br>
                 <label for="pTpNo">Telephone Number(Private)</label>
                 <br>
-                <input type="tel" name="pTpNo" id="pTpNo" pattern="/^[0-9]{10}$/" maxlength="10">
+                <input type="tel" name="pTpNo" id="pTpNo" pattern="/^[0-9]{3}-[0-9]{7}$/" maxlength="10" placeholder="012-3456789">
+
                 <p id="rqrd">*Required</p>
+
                 <br>
                 <br>
                 <label for="pTpNo">Email Address</label>
@@ -120,6 +122,9 @@
                 <p id="rqrd">*Required</p>
                 <br><br>
             </fieldset>
+            <p id="invalidTpNo">Oops! Invalid telephone number!</p>
+            <p id="invalidemail">Oops! Invalid email address. Email should be <br> of the format harrypotter@hogwarts.com</p>
+            <p id="invalidNIC">Oops! Invalid NIC number!</p>
             <br>
             <br>
             <fieldset class="mainFieldset">
@@ -205,7 +210,7 @@
                 <br>
                 <legend>Monthly Income</legend>
 
-                <label for=" empIncome">Gross Salary if Employed</label>
+                <label for="empIncome">Gross Salary if Employed</label>
                 <br>
                 <input type="number" name="empIncome" id="empIncome" min="0" placeholder="Rs."> .00
                 <br>
