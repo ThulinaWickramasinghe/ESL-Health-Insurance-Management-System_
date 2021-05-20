@@ -349,6 +349,7 @@ input[type="radio"] {
 }
 
 #invalidTpNo {
+    display: none;
     position: relative;
     float: right;
     top: -157vh;
@@ -369,6 +370,7 @@ input[type="radio"] {
 }
 
 #invalidNIC {
+    display: none;
     position: relative;
     float: right;
     top: -175vh;

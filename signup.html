@@ -60,7 +60,7 @@
                 <br>
                 <label for="pTpNo">Telephone Number(Private)</label>
                 <br>
-                <input type="tel" name="pTpNo" id="pTpNo" pattern="/^[0-9]{3}-[0-9]{7}$/" maxlength="10" placeholder="012-3456789">
+                <input type="tel" name="pTpNo" id="pTpNo" pattern="/^[0-9]{3}-[0-9]{7}$/" maxlength="11" placeholder="012-3456789">
 
                 <p id="rqrd">*Required</p>
 
@@ -444,33 +444,72 @@
     </footer> -->
 
     <script>
+        //validate NIC
         var NIC = document.getElementById("NIC");
 
-        function validateForm() {
-            var tpNo = document.getElementById("pTpNo").value;
 
+        NIC.onfocus = function() {
+            document.getElementById("invalidNIC").style.display = "block";
+        }
+        NIC.onblur = function() {
+            document.getElementById("invalidNIC").style.display = "none";
+        }
 
-            if (!(/[0-9]{3}-[0-9]{7}/.test(tpNo))) {}
-
-            if (repswrd !== pswrd) {
-                alert("passwords do not match!");
+        NIC.onkeyup = function() {
+            if (NIC.value.match(/(^[0-9]{9}[V,X]$)|(^[0-9]{12}$)/ig)) {
+                document.getElementById("invalidNIC").style.display = "none";
+            } else {
+                document.getElementById("invalidNIC").style.display = "block";
             }
-
 
         }
 
+
+        var tpNo = document.getElementById("pTpNo");
+
+
+        tpNo.onfocus = function() {
+            document.getElementById("invalidTpNo").style.display = "block";
+        }
+        tpNo.onblur = function() {
+            document.getElementById("invalidTpNo").style.display = "none";
+        }
+
+
+        tpNo.onkeyup = function() {
+                if (tpNo.value.match(/[0-9]{3}-[0-9]{7}/)) {
+                    document.getElementById("invalidTpNo").style.display = "none";
+                } else {
+                    document.getElementById("invalidTpNo").style.display = "block";
+                }
+
+            }
+            // function validateForm() {
+            //     var tpNo = document.getElementById("pTpNo").value;
+
+
+        //     if (!(/[0-9]{3}-[0-9]{7}/.test(tpNo))) {}
+
+        //     if (repswrd !== pswrd) {
+        //         alert("passwords do not match!");
+        //     }
+
+
+        // }
+
+
+        //validate password
         var myInput = document.getElementById("pwd");
         var letter = document.getElementById("simple");
         var capital = document.getElementById("capital");
         var number = document.getElementById("number");
-        var length = document.getElementById("length"); //when the
-        //user clicks on the password field, show the message
+        var length = document.getElementById("length");
         myInput.onfocus = function() {
-                document.getElementById("pwdMessage").style.display = "block";
-            } //when the user clicks outside of the password field, hide the message 
+            document.getElementById("pwdMessage").style.display = "block";
+        }
         myInput.onblur = function() {
-                document.getElementById("pwdMessage").style.display = "none";
-            } //when the user starts to type something inside the password field 
+            document.getElementById("pwdMessage").style.display = "none";
+        }
         myInput.onkeyup = function() { //validate lowercase letters
             var lowerCaseLetters = /[a-z]/g;
             if (myInput.value.match(lowerCaseLetters)) {
