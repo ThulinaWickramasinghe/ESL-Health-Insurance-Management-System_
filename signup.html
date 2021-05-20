@@ -8,7 +8,7 @@
     <title>EsL Health Insurance</title>
     <link rel="stylesheet" href="./styles/signUpStyle.css">
     <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.css">
-    <script src="./JS/signUpScript.js"></script>
+    <!-- <script src="./JS/signUpScript.js"></script> -->
 </head>
 
 <body>
@@ -102,8 +102,8 @@
                 <label for="Muslim">Muslim</label><br>
                 <input type="radio" name="nationality" id="Burger" class="radio" required>
                 <label for="Burger">Burger</label><br>
-                <input type="radio" name="nationality" id="Other" class="radio" required>
-                <label for="Other">Other</label>
+                <input type="radio" name="nationality" id="natOther" class="radio" required>
+                <label for="natOther">Other</label>
                 <p id="rqrd">*Required</p>
                 <br><br>
                 <p>Religion</p>
@@ -117,8 +117,8 @@
                 <label for="Islam">Islam</label><br>
                 <input type="radio" name="Religion" id="Christianity" class="radio">
                 <label for="Christianity">Christianity</label><br>
-                <input type="radio" name="Religion" id="Other" class="radio">
-                <label for="Other">Other</label>
+                <input type="radio" name="Religion" id="relOther" class="radio">
+                <label for="rellOther">Other</label>
                 <p id="rqrd">*Required</p>
                 <br><br>
             </fieldset>
@@ -173,12 +173,12 @@
                     <br>
                     <label for="busAddress">Business Address</label>
                     <br>
-                    <textarea name="empAddress" id="empAddress" cols="30" rows="7"></textarea>
+                    <textarea name="busAddress" id="busAddress" cols="30" rows="7"></textarea>
                     <br>
                     <br>
-                    <label for="anTurnover">Annual Turnover</label>
+                    <label for="busAnTurnover">Annual Turnover</label>
                     <br>
-                    <input type="number" name="anTurnover" id="anTurnover" min="0" placeholder="Rs."> .00
+                    <input type="number" name="busAnTurnover" id="busAnTurnover" min="0" placeholder="Rs."> .00
                     <br>
                     <br>
 
@@ -194,14 +194,14 @@
                     <textarea name="sEmpName" id="sEmpName" cols="30" rows="5"></textarea>
                     <br>
                     <br>
-                    <label for="anTurnover">Annual Turnover</label>
+                    <label for="selfAnTurnover">Annual Turnover</label>
                     <br>
-                    <input type="number" name="anTurnover" id="anTurnover" min="0" placeholder="Rs."> .00
+                    <input type="number" name="selfAnTurnover" id="selfAnTurnover" min="0" placeholder="Rs."> .00
                     <br>
                     <br>
                     <label for="sPeriod">Period in Self-employment(in years)</label>
                     <br>
-                    <input type="number" name="busType" id="busType" min="0" max="100">
+                    <input type="number" name="sPeriod" id="sPeriod" min="0" max="100">
                 </fieldset>
                 <br>
             </fieldset>
@@ -325,7 +325,7 @@
                     <br>
                     <p>Upload an jpg or png or pdf fromat file of the scanned copy of your NIC</p>
                     <br>
-                    <input type="file" name="NIC" id="NIC">
+                    <input type="file" name="NICfile" id="NICfile">
                 </fieldset>
                 <fieldset class="subFieldset">
                     <legend>Validate Income Details</legend>
@@ -363,10 +363,20 @@
                 <br>
                 <label for="userName">Enter a user name for your account(User name can consist of only english simple letters,digits and underscores)</label><br><br>
                 <input type="text" name="userName" id="userName" placeholder="Username"><br><br><br>
-                <label for="pwd">Enter a password for your account(password should consist of at least an english uppercase letter , an english lowercase letter and a digit and it should be at least 8 characters long)</label><br><br>
+                <label for="pwd">Enter a password for your account(password should consist of at least an english uppercase letter, a lowercase letter, a digit and it should be at least 8 characters long)</label><br><br>
                 <input type="password" name="pwd" id="pwd" placeholder="Password"><br><br>
-                <input type="password" name="pwd" id="pwd" placeholder="Re-type password"><br>
+                <input type="password" name="repwd" id="repwd" placeholder="Re-type password"><br>
             </fieldset>
+            <p id="invUsername">Sorry, this username is already in use.</p>
+            <div>
+                <div id="pwdMessage">
+                    <h3>Password must contain the following:</h3>
+                    <p id="simple" class="invalidPwd">A <b>lowercase</b> letter</p>
+                    <p id="capital" class="invalidPwd">A <b>capital(uppercase)</b> letter</p>
+                    <p id="number" class="invalidPwd">A <b>number</b></p>
+                    <p id="length" class="invalidPwd">Minimum <b>8</b> characers</p>
+                </div>
+            </div>
             <br>
             <div id="termsDiv">
                 <input type="checkbox" name="terms" id="terms">
@@ -432,6 +442,69 @@
 
 
     </footer> -->
+
+    <script>
+        var NIC = document.getElementById("NIC");
+
+        function validateForm() {
+            var tpNo = document.getElementById("pTpNo").value;
+
+
+            if (!(/[0-9]{3}-[0-9]{7}/.test(tpNo))) {}
+
+            if (repswrd !== pswrd) {
+                alert("passwords do not match!");
+            }
+
+
+        }
+
+        var myInput = document.getElementById("pwd");
+        var letter = document.getElementById("simple");
+        var capital = document.getElementById("capital");
+        var number = document.getElementById("number");
+        var length = document.getElementById("length"); //when the
+        //user clicks on the password field, show the message
+        myInput.onfocus = function() {
+                document.getElementById("pwdMessage").style.display = "block";
+            } //when the user clicks outside of the password field, hide the message 
+        myInput.onblur = function() {
+                document.getElementById("pwdMessage").style.display = "none";
+            } //when the user starts to type something inside the password field 
+        myInput.onkeyup = function() { //validate lowercase letters
+            var lowerCaseLetters = /[a-z]/g;
+            if (myInput.value.match(lowerCaseLetters)) {
+                letter.classList.remove("invalidPwd");
+                letter.classList.add("validPwd");
+            } else {
+                letter.classList.remove("validPwd");
+                letter.classList.add("invalidPwd");
+            } //validate capital letters
+            var upperCaseLetters = /[A-Z]/g;
+            if (myInput.value.match(upperCaseLetters)) {
+                capital.classList.remove("invalidPwd");
+                capital.classList.add("validPwd");
+            } else {
+                capital.classList.remove("validPwd");
+                capital.classList.add("invalidPwd");
+            } //validate numbers
+            var numbers = /[0-9]/g;
+            if (myInput.value.match(numbers)) {
+                number.classList.remove("invalidPwd");
+                number.classList.add("validPwd");
+            } else {
+                number.classList.remove("validPwd");
+                number.classList.add("invalidPwd");
+            } //validate length
+            if (myInput.value.length >= 8) {
+                length.classList.remove("invalidPwd");
+                length.classList.add("validPwd");
+            } else {
+                length.classList.remove("validPwd");
+                length.classList.add("invalidPwd");
+            }
+        }
+    </script>
 </body>
 
 </html>

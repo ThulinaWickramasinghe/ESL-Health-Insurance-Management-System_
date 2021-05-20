@@ -7,10 +7,15 @@
 }
 
 body {
-    background-image: linear-gradient(rgb(48, 224, 210, 0.2), rgba(48, 224, 210, 0.1)), url("../images/pexels-karolina-grabowska-4397831.jpg");
+    /* background-color: #eec0c6;
+    background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%); */
+    /* background-color: #abe9cd;
+    background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%); */
+    background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
 }
 
 #signIn,
@@ -371,4 +376,49 @@ input[type="radio"] {
     font-weight: normal;
     font-family: sans-serif;
     color: crimson;
+}
+
+#invUsername {
+    position: relative;
+    float: right;
+    top: -43.5vh;
+    font-weight: normal;
+    right: 220px;
+    font-family: sans-serif;
+    color: crimson;
+}
+
+#pwdMessage {
+    display: inline;
+    float: right;
+    position: relative;
+    font-weight: normal;
+    font-family: sans-serif;
+    right: -95px;
+    top: -180px;
+}
+
+#pwdMessage p {
+    padding: 7px 30px;
+    /* font-size: 15px; */
+}
+
+.validPwd {
+    color: green;
+}
+
+.validPwd::before {
+    position: relative;
+    left: -35px;
+    content: "\2713";
+}
+
+.invalidPwd {
+    color: crimson;
+}
+
+.invalidPwd::before {
+    position: relative;
+    left: -35px;
+    content: "\274C";
 }
