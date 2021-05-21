@@ -353,17 +353,18 @@ input[type="radio"] {
     position: relative;
     float: right;
     top: -157vh;
-    right: 322px;
+    right: 200px;
     font-weight: normal;
     font-family: sans-serif;
     color: crimson;
 }
 
 #invalidemail {
+    display: none;
     position: relative;
     float: right;
-    top: -140vh;
-    right: -2px;
+    top: -141vh;
+    right: 110px;
     font-weight: normal;
     font-family: sans-serif;
     color: crimson;
@@ -374,7 +375,7 @@ input[type="radio"] {
     position: relative;
     float: right;
     top: -175vh;
-    right: -189px;
+    right: 250px;
     font-weight: normal;
     font-family: sans-serif;
     color: crimson;
@@ -391,7 +392,7 @@ input[type="radio"] {
 }
 
 #pwdMessage {
-    display: inline;
+    display: none;
     float: right;
     position: relative;
     font-weight: normal;
@@ -423,4 +424,15 @@ input[type="radio"] {
     position: relative;
     left: -35px;
     content: "\274C";
+}
+
+#invRepwd {
+    display: none;
+    position: relative;
+    float: right;
+    top: -12vh;
+    font-weight: normal;
+    right: 10px;
+    font-family: sans-serif;
+    color: crimson;
 }

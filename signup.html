@@ -68,7 +68,7 @@
                 <br>
                 <label for="pTpNo">Email Address</label>
                 <br>
-                <input type="email" name="eAddress" id="eAddres">
+                <input type="email" name="eAddress" id="eAddress">
                 <br>
                 <br>
                 <label for="NIC">Address(Residential/Permanent)</label><br>
@@ -246,7 +246,7 @@
             <fieldset class="mainFieldset">
                 <br>
                 <legend>Details of Bank Accounts</legend>
-                <table border="1">
+                <table border="1" id="bankAccounts">
                     <thead>
                         <th>Name of the bank</th>
                         <th>Name of the branch</th>
@@ -305,7 +305,7 @@
                     </tbody>
                 </table>
                 <br>
-                <button id="addAcc">&nbsp;+&nbsp;</button>
+                <button id="addAcc" onclick="addRow()">&nbsp;+&nbsp;</button>
                 <!-- <label for="bankName">Name of the bank where the account is maintained</label>
 
                         <input type="text" name="bankName" id="bankName"> -->
@@ -365,7 +365,7 @@
                 <input type="text" name="userName" id="userName" placeholder="Username"><br><br><br>
                 <label for="pwd">Enter a password for your account(password should consist of at least an english uppercase letter, a lowercase letter, a digit and it should be at least 8 characters long)</label><br><br>
                 <input type="password" name="pwd" id="pwd" placeholder="Password"><br><br>
-                <input type="password" name="repwd" id="repwd" placeholder="Re-type password"><br>
+                <input type="password" name="repwd" id="repwd" placeholder="Re-type password" disabled=true><br>
             </fieldset>
             <p id="invUsername">Sorry, this username is already in use.</p>
             <div>
@@ -377,14 +377,15 @@
                     <p id="length" class="invalidPwd">Minimum <b>8</b> characers</p>
                 </div>
             </div>
-            <br>
+
+            <div id="invRepwd">Passwords do not match.</div><br>
             <div id="termsDiv">
                 <input type="checkbox" name="terms" id="terms">
                 <label for="terms" style="font-size: large; font-weight: normal;">I accept the <a href="#">terms and conditions</a> of this Insurance Policy.</label>
                 <br>
             </div>
 
-            <input type="submit" value="Submit" id="formSubmit">
+            <input type="submit" value="Submit" id="formSubmit" disabled=true>
         </form>
     </div>
     <!-- 
@@ -449,7 +450,9 @@
 
 
         NIC.onfocus = function() {
-            document.getElementById("invalidNIC").style.display = "block";
+            if (!NIC.value.match(/(^[0-9]{9}[V,X]$)|(^[0-9]{12}$)/ig)) {
+                document.getElementById("invalidNIC").style.display = "block";
+            }
         }
         NIC.onblur = function() {
             document.getElementById("invalidNIC").style.display = "none";
@@ -464,12 +467,14 @@
 
         }
 
-
+        //validate telephone number
         var tpNo = document.getElementById("pTpNo");
 
 
         tpNo.onfocus = function() {
-            document.getElementById("invalidTpNo").style.display = "block";
+            if (!tpNo.value.match(/[0-9]{3}-[0-9]{7}/)) {
+                document.getElementById("invalidTpNo").style.display = "block";
+            }
         }
         tpNo.onblur = function() {
             document.getElementById("invalidTpNo").style.display = "none";
@@ -477,42 +482,58 @@
 
 
         tpNo.onkeyup = function() {
-                if (tpNo.value.match(/[0-9]{3}-[0-9]{7}/)) {
-                    document.getElementById("invalidTpNo").style.display = "none";
-                } else {
-                    document.getElementById("invalidTpNo").style.display = "block";
-                }
-
+            if (tpNo.value.match(/[0-9]{3}-[0-9]{7}/)) {
+                document.getElementById("invalidTpNo").style.display = "none";
+            } else {
+                document.getElementById("invalidTpNo").style.display = "block";
             }
-            // function validateForm() {
-            //     var tpNo = document.getElementById("pTpNo").value;
+
+        }
 
 
-        //     if (!(/[0-9]{3}-[0-9]{7}/.test(tpNo))) {}
 
-        //     if (repswrd !== pswrd) {
-        //         alert("passwords do not match!");
-        //     }
+        //validate email
+
+        var emailAddress = document.getElementById("eAddress");
 
 
-        // }
+        emailAddress.onfocus = function() {
+            if (!emailAddress.value.match(/(^[a-z0-9]+@[a-z]+.[a-z.]+)/i)) {
+                document.getElementById("invalidemail").style.display = "block";
+            }
+        }
+
+
+        emailAddress.onblur = function() {
+            document.getElementById("invalidemail").style.display = "none";
+        }
+
+
+        emailAddress.onkeyup = function() {
+            if (emailAddress.value.match(/(^[a-z0-9]+@[a-z]+.[a-z.]+)/i)) {
+                document.getElementById("invalidemail").style.display = "none";
+            } else {
+                document.getElementById("invalidemail").style.display = "block";
+            }
+        }
+
 
 
         //validate password
-        var myInput = document.getElementById("pwd");
+        var myPwd = document.getElementById("pwd");
         var letter = document.getElementById("simple");
         var capital = document.getElementById("capital");
         var number = document.getElementById("number");
         var length = document.getElementById("length");
-        myInput.onfocus = function() {
+        myPwd.onfocus = function() {
             document.getElementById("pwdMessage").style.display = "block";
         }
-        myInput.onblur = function() {
+        myPwd.onblur = function() {
             document.getElementById("pwdMessage").style.display = "none";
         }
-        myInput.onkeyup = function() { //validate lowercase letters
+        myPwd.onkeyup = function() { //validate lowercase letters
             var lowerCaseLetters = /[a-z]/g;
-            if (myInput.value.match(lowerCaseLetters)) {
+            if (myPwd.value.match(lowerCaseLetters)) {
                 letter.classList.remove("invalidPwd");
                 letter.classList.add("validPwd");
             } else {
@@ -520,7 +541,7 @@
                 letter.classList.add("invalidPwd");
             } //validate capital letters
             var upperCaseLetters = /[A-Z]/g;
-            if (myInput.value.match(upperCaseLetters)) {
+            if (myPwd.value.match(upperCaseLetters)) {
                 capital.classList.remove("invalidPwd");
                 capital.classList.add("validPwd");
             } else {
@@ -528,22 +549,59 @@
                 capital.classList.add("invalidPwd");
             } //validate numbers
             var numbers = /[0-9]/g;
-            if (myInput.value.match(numbers)) {
+            if (myPwd.value.match(numbers)) {
                 number.classList.remove("invalidPwd");
                 number.classList.add("validPwd");
             } else {
                 number.classList.remove("validPwd");
                 number.classList.add("invalidPwd");
             } //validate length
-            if (myInput.value.length >= 8) {
+            if (myPwd.value.length >= 8) {
                 length.classList.remove("invalidPwd");
                 length.classList.add("validPwd");
             } else {
                 length.classList.remove("validPwd");
                 length.classList.add("invalidPwd");
             }
+
+            if (myPwd.value.match(lowerCaseLetters) && myPwd.value.match(upperCaseLetters) && myPwd.value.match(numbers) && myPwd.value.length >= 8) {
+                document.getElementById("repwd").disabled = false;
+            } else {
+                document.getElementById("repwd").disabled = true;
+            }
+        }
+
+        //validate retype password
+        var retypePwd = document.getElementById("repwd");
+
+        retypePwd.onfocus = function() {
+            if (retypePwd.value != myPwd.value) {
+                document.getElementById("invRepwd").style.display = "block";
+            } else {
+                document.getElementById("invRepwd").style.display = "none";
+            }
+        }
+
+        retypePwd.onblur = function() {
+            document.getElementById("invRepwd").style.display = "none";
+        }
+
+
+        retypePwd.onkeyup = () => {
+            if (retypePwd.value !== myPwd.value) {
+                document.getElementById("invRepwd").style.display = "block";
+            } else {
+                document.getElementById("invRepwd").style.display = "none";
+            }
+        }
+
+
+        function addRow() {
+            document.getElementById("bankAccounts")
         }
     </script>
 </body>
+
+</html>
 
 </html>
