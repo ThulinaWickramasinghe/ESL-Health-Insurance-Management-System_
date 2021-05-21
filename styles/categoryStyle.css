@@ -196,7 +196,7 @@
     #mainDiv div {
         top: 20px;
         position: relative;
-        left: 90px;
+        left: 150px;
         height: 40%;
         width: 35%;
         margin: 20px;
@@ -212,6 +212,14 @@
         float: left;
     }
     
-    footer {
+    #mainDiv div p {
+        margin: 5px;
+    }
+    
+    #mainDiv div img {
+        margin: 1px;
+    }
+    
+    # footer {
         bottom: 0vh;
     }
