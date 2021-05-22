@@ -197,9 +197,10 @@
         top: 20px;
         position: relative;
         left: 150px;
-        height: 40%;
+        height: 45%;
         width: 35%;
-        margin: 20px;
+        margin: 10px;
+        color: azure;
     }
     
     #medicareP,
@@ -213,11 +214,11 @@
     }
     
     #mainDiv div p {
-        margin: 5px;
+        margin-left: 235px;
     }
     
     #mainDiv div img {
-        margin: 1px;
+        margin: 2px;
     }
     
     #mainDiv fieldset {
