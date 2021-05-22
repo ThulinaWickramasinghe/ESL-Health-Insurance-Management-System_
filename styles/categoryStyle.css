@@ -220,6 +220,15 @@
         margin: 1px;
     }
     
-    # footer {
+    #mainDiv fieldset {
+        /* background: linear-gradient(315deg, #75aabeb2 0%, #4697bdaf 74%); */
+        background: linear-gradient(rgba(48, 224, 209, 0.363), rgba(48, 224, 209, 0.247));
+        border-radius: 10px;
+        border: darkcyan;
+    }
+    
+    #mainDiv fieldset img {}
+    
+    #footer {
         bottom: 0vh;
     }
