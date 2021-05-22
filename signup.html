@@ -449,16 +449,16 @@
         var NIC = document.getElementById("NIC");
 
 
-        NIC.onfocus = function() {
+        NIC.onfocus = () => {
             if (!NIC.value.match(/(^[0-9]{9}[V,X]$)|(^[0-9]{12}$)/ig)) {
                 document.getElementById("invalidNIC").style.display = "block";
             }
         }
-        NIC.onblur = function() {
+        NIC.onblur = () => {
             document.getElementById("invalidNIC").style.display = "none";
         }
 
-        NIC.onkeyup = function() {
+        NIC.onkeyup = () => {
             if (NIC.value.match(/(^[0-9]{9}[V,X]$)|(^[0-9]{12}$)/ig)) {
                 document.getElementById("invalidNIC").style.display = "none";
             } else {
@@ -471,17 +471,17 @@
         var tpNo = document.getElementById("pTpNo");
 
 
-        tpNo.onfocus = function() {
+        tpNo.onfocus = () => {
             if (!tpNo.value.match(/[0-9]{3}-[0-9]{7}/)) {
                 document.getElementById("invalidTpNo").style.display = "block";
             }
         }
-        tpNo.onblur = function() {
+        tpNo.onblur = () => {
             document.getElementById("invalidTpNo").style.display = "none";
         }
 
 
-        tpNo.onkeyup = function() {
+        tpNo.onkeyup = () => {
             if (tpNo.value.match(/[0-9]{3}-[0-9]{7}/)) {
                 document.getElementById("invalidTpNo").style.display = "none";
             } else {
@@ -497,19 +497,19 @@
         var emailAddress = document.getElementById("eAddress");
 
 
-        emailAddress.onfocus = function() {
+        emailAddress.onfocus = () => {
             if (!emailAddress.value.match(/(^[a-z0-9]+@[a-z]+.[a-z.]+)/i)) {
                 document.getElementById("invalidemail").style.display = "block";
             }
         }
 
 
-        emailAddress.onblur = function() {
+        emailAddress.onblur = () => {
             document.getElementById("invalidemail").style.display = "none";
         }
 
 
-        emailAddress.onkeyup = function() {
+        emailAddress.onkeyup = () => {
             if (emailAddress.value.match(/(^[a-z0-9]+@[a-z]+.[a-z.]+)/i)) {
                 document.getElementById("invalidemail").style.display = "none";
             } else {
@@ -525,13 +525,13 @@
         var capital = document.getElementById("capital");
         var number = document.getElementById("number");
         var length = document.getElementById("length");
-        myPwd.onfocus = function() {
+        myPwd.onfocus = () => {
             document.getElementById("pwdMessage").style.display = "block";
         }
-        myPwd.onblur = function() {
+        myPwd.onblur = () => {
             document.getElementById("pwdMessage").style.display = "none";
         }
-        myPwd.onkeyup = function() { //validate lowercase letters
+        myPwd.onkeyup = () => { //validate lowercase letters
             var lowerCaseLetters = /[a-z]/g;
             if (myPwd.value.match(lowerCaseLetters)) {
                 letter.classList.remove("invalidPwd");
@@ -574,7 +574,7 @@
         //validate retype password
         var retypePwd = document.getElementById("repwd");
 
-        retypePwd.onfocus = function() {
+        retypePwd.onfocus = () => {
             if (retypePwd.value != myPwd.value) {
                 document.getElementById("invRepwd").style.display = "block";
             } else {
@@ -582,7 +582,7 @@
             }
         }
 
-        retypePwd.onblur = function() {
+        retypePwd.onblur = () => {
             document.getElementById("invRepwd").style.display = "none";
         }
 
