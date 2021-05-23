@@ -208,3 +208,28 @@ body {
 #social ul li a :hover {
     color: darkolivegreen;
 }
+
+#containerBox {
+    position: relative;
+    border: solid black 1px;
+    width: 80vw;
+    height: 57vh;
+    left: 9vw;
+}
+
+#welcome {
+    position: relative;
+    left: 50vw;
+}
+
+.subDiv {
+    position: relative;
+    left: 46vw;
+    margin: 10px;
+}
+
+#changePwd {
+    position: relative;
+    padding: 7px;
+    left: 48vw;
+}

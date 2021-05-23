@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EsL Health Insurance</title>
-    <link rel="stylesheet" href="./styles/homeStyle.css">
+    <link rel="stylesheet" href="./styles/userProfileStyles.css">
     <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.css">
 </head>
 
@@ -21,7 +21,7 @@
         </div>
 
         <div class="topnav">
-            <a class="active" href="home.html">Home</a>
+            <a href="home.html">Home</a>
             <a href="category.html">Category</a>
             <a href="products_services.html">Products & Services</a>
             <a href="contact.html">Contact Us</a>
@@ -39,7 +39,31 @@
     </header>
 
     <div style="height: 60vh; font-weight: bold; margin-top: 20px">
-        <p>CONTENT OF THE PAGE</p>
+        <div id="containerBox">
+            <h3 id="welcome">Hi <span>Name Here</span>!</h3>
+            <img src="" alt="" id="profilePic">
+            <div id="addressDiv" class="subDiv">
+                <label for="userAddres">Address</label>
+                <input type="text" id="userAddress">
+                <button type="">Edit</button><br>
+            </div>
+            <div id="tpNoDiv" class="subDiv">
+                <label for="tpno">Telephone</label>
+                <input type="tel" id="tpno">
+                <button type="">Edit</button>
+            </div>
+            <div id="emailDiv" class="subDiv">
+                <label for="emailAddress">Email</label>
+                <input type="email" name="emailAddress" id="emailAddress">
+                <button type="">Edit</button>
+            </div>
+
+
+            <button id="changePwd">Change password</button>
+            <span>User Name</span>
+            <button type="">Edit</button>
+
+        </div>
     </div>
 
     <footer>
