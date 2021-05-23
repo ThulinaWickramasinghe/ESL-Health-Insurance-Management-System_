@@ -11,8 +11,9 @@ body {
     background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%); */
     /* background-color: #abe9cd;
     background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%); */
-    background-color: #b8c6db;
-    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+    /* background-color: #557A95; */
+    /* background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%); */
+    background-color: #1a1a1d;
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
@@ -226,6 +227,8 @@ form {
     padding: 30px;
     padding-left: auto;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #4e4e50;
+    left: 150px;
 }
 
 .subFieldset {
@@ -306,7 +309,7 @@ input[type="radio"] {
     border: none;
     position: relative;
     height: 6vh;
-    background-color: cornflowerblue;
+    background-color: #950740;
     align-items: center;
     border-radius: 3px;
     width: 15vw;
@@ -314,7 +317,8 @@ input[type="radio"] {
     color: whitesmoke;
     font-size: x-large;
     margin: 2vw;
-    left: 20vw;
+    left: 31vw;
+    top: -10px;
 }
 
 #regHead {
@@ -324,11 +328,13 @@ input[type="radio"] {
 
 #termsDiv {
     position: relative;
-    margin: 40px;
+    margin: 15px;
+    color: #4e4e50;
+    left: 200px;
 }
 
 #rqrd {
-    color: red;
+    color: #c3073f;
     font-family: sans-serif;
     font-size: small;
 }
@@ -356,7 +362,8 @@ input[type="radio"] {
     right: 200px;
     font-weight: normal;
     font-family: sans-serif;
-    color: crimson;
+    color: #c3073f;
+    ;
 }
 
 #invalidemail {
@@ -367,7 +374,8 @@ input[type="radio"] {
     right: 110px;
     font-weight: normal;
     font-family: sans-serif;
-    color: crimson;
+    color: #c3073f;
+    ;
 }
 
 #invalidNIC {
@@ -378,7 +386,8 @@ input[type="radio"] {
     right: 250px;
     font-weight: normal;
     font-family: sans-serif;
-    color: crimson;
+    color: #c3073f;
+    ;
 }
 
 #invUsername {
@@ -386,9 +395,9 @@ input[type="radio"] {
     float: right;
     top: -43.5vh;
     font-weight: normal;
-    right: 220px;
+    right: 100px;
     font-family: sans-serif;
-    color: crimson;
+    color: #c3073f;
 }
 
 #pwdMessage {
@@ -397,7 +406,7 @@ input[type="radio"] {
     position: relative;
     font-weight: normal;
     font-family: sans-serif;
-    right: -95px;
+    right: -210px;
     top: -180px;
 }
 
@@ -417,7 +426,7 @@ input[type="radio"] {
 }
 
 .invalidPwd {
-    color: crimson;
+    color: #c3073f;
 }
 
 .invalidPwd::before {
@@ -432,7 +441,7 @@ input[type="radio"] {
     float: right;
     top: -12vh;
     font-weight: normal;
-    right: 10px;
+    right: -70px;
     font-family: sans-serif;
-    color: crimson;
+    color: #c3073f;
 }
