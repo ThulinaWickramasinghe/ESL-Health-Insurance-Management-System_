@@ -43,25 +43,35 @@
             <h3 id="welcome">Hi <span>Name Here</span>!</h3>
             <img src="" alt="" id="profilePic">
             <div id="addressDiv" class="subDiv">
-                <label for="userAddres">Address</label>
-                <input type="text" id="userAddress">
-                <button type="">Edit</button><br>
+                <span class="labels">Address</span>
+                <input type="text" id="userAddress" name="userAddress">
+                <button id="saveNewAddress" class="saveButtons">Save</button>
+                <!-- <span class="currentDetailsAddress" id="userCurrentAddress">User's Address Here</span> -->
+                <!-- <button type="" class="editButtons" id="editAddressButton" class="currentDetailsAddress">Edit</button> --><br>
             </div>
             <div id="tpNoDiv" class="subDiv">
-                <label for="tpno">Telephone</label>
-                <input type="tel" id="tpno">
-                <button type="">Edit</button>
+                <span class="labels">Telephone</span>
+                <input type="tel" id="newtpno" name="newtpno">
+                <button id="saveNewtpno" class="saveButtons">Save</button>
+                <!-- <span class="currentDetails" id="userCurrentTpNo" class="currentDetailsTP">User's TP No here</span> -->
+                <!-- <button type="" class="editButtons" id="editTPButton" class="currentDetailsTP">Edit</button> -->
             </div>
             <div id="emailDiv" class="subDiv">
-                <label for="emailAddress">Email</label>
+                <span class="labels">Email</span>
                 <input type="email" name="emailAddress" id="emailAddress">
-                <button type="">Edit</button>
+                <button id="saveNewEmail" class="saveButtons">Save</button>
+                <!-- <span class="currentDetails" id="userCurrentEmail" class="currentDetailsEmail">User's email address here</span> -->
+                <!-- <button type="" class="editButtons" id="editEmailButton" class="currentDetailsEmali">Edit</button> -->
             </div>
 
 
             <button id="changePwd">Change password</button>
-            <span>User Name</span>
-            <button type="">Edit</button>
+            <div id="changeUserName">
+                <span class="labels">User Name</span>
+                <!-- <input type="text" name="newUserName" id="newUserName"> -->
+                <button type="" id="editUsernameButton">Edit</button>
+            </div>
+
 
         </div>
     </div>

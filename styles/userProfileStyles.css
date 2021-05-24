@@ -224,12 +224,129 @@ body {
 
 .subDiv {
     position: relative;
-    left: 46vw;
-    margin: 10px;
+    left: 15vw;
+    margin: 25px;
+    top: 20px;
 }
 
 #changePwd {
     position: relative;
-    padding: 7px;
-    left: 48vw;
+    padding: 8px;
+    left: 50vw;
+    top: 40px;
+}
+
+#profilePic {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    float: left;
+    margin: 5px;
+    top: -10px;
+    left: 10px;
+}
+
+.editButtons {
+    position: relative;
+    left: 350px;
+    padding-top: 6px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#tpNoDiv,
+#addressDiv {
+    margin-bottom: 40px;
+}
+
+#changeUserName {
+    position: inherit;
+    left: 65px;
+    bottom: 30px;
+}
+
+#userCurrentAddress {
+    position: relative;
+    left: 50px;
+}
+
+#userCurrentTpNo {
+    position: relative;
+    left: 37px;
+}
+
+#userCurrentEmail {
+    position: relative;
+    left: 66px;
+}
+
+#editAddressButton {
+    position: relative;
+    left: 370px;
+}
+
+#editTPButton {
+    position: relative;
+    left: 371px;
+}
+
+#editEmailButton {
+    position: relative;
+    left: 349px;
+}
+
+#editUsernameButton {
+    padding-top: 6px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#containerBox input {
+    padding: 5px;
+    width: 36vw;
+    border: none;
+    background-color: rgba(123, 146, 146, 0.63);
+}
+
+#userAddress {
+    position: relative;
+    left: 43px;
+}
+
+#newtpno {
+    position: relative;
+    left: 30px;
+}
+
+#emailAddress {
+    position: relative;
+    left: 59px;
+}
+
+.saveButtons {
+    position: relative;
+    padding-top: 6px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    background-color: grey;
+}
+
+#saveNewAddress {
+    position: relative;
+    left: 58px;
+}
+
+#saveNewtpno {
+    position: relative;
+    left: 45px;
+}
+
+#saveNewEmail {
+    position: relative;
+    left: 73px;
 }
