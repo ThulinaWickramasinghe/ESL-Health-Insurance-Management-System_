@@ -44,27 +44,27 @@
             <img src="" alt="" id="profilePic">
             <div id="addressDiv" class="subDiv">
                 <span class="labels">Address</span>
-                <input type="text" id="userAddress" name="userAddress">
-                <button id="saveNewAddress" class="saveButtons">Save</button>
-                <!-- <span class="currentDetailsAddress" id="userCurrentAddress">User's Address Here</span> -->
-                <!-- <button type="" class="editButtons" id="editAddressButton" class="currentDetailsAddress">Edit</button> --><br>
+                <input type="text" id="userAddress" name="userAddress" class="newAddress" placeholder="Hogwarts Castle, Highlands, Scotland, Great Britain">
+                <button id="saveNewAddress" class="saveButtons newAddress" onclick="" type="submit">Save</button>
+                <span class="currentDetailsAddress" id="userCurrentAddress">User's Address Here</span>
+                <button type="" class="editButtons" id="editAddressButton" class="currentDetailsAddress">Edit</button><br>
             </div>
             <div id="tpNoDiv" class="subDiv">
                 <span class="labels">Telephone</span>
-                <input type="tel" id="newtpno" name="newtpno">
-                <button id="saveNewtpno" class="saveButtons">Save</button>
-                <!-- <span class="currentDetails" id="userCurrentTpNo" class="currentDetailsTP">User's TP No here</span> -->
-                <!-- <button type="" class="editButtons" id="editTPButton" class="currentDetailsTP">Edit</button> -->
+                <input type="tel" id="newtpno" name="newtpno" class="newTPNo" pattern="/^[0-9]{3}-[0-9]{7}$/" maxlength="11" placeholder="012-3456789">
+                <button id="saveNewtpno" class="saveButtons newTPNo" onclick="" type="submit">Save</button>
+                <p id="invalidTpNo">Invalid telephone number!</p>
+                <span class="currentDetails currentDetailsTP" id="userCurrentTpNo">User's TP No here</span>
+                <button type="" class="editButtons currentDetailsTP" id="editTPButton" onclick="">Edit</button>
             </div>
             <div id="emailDiv" class="subDiv">
                 <span class="labels">Email</span>
-                <input type="email" name="emailAddress" id="emailAddress">
-                <button id="saveNewEmail" class="saveButtons">Save</button>
-                <!-- <span class="currentDetails" id="userCurrentEmail" class="currentDetailsEmail">User's email address here</span> -->
-                <!-- <button type="" class="editButtons" id="editEmailButton" class="currentDetailsEmali">Edit</button> -->
+                <input type="email" name="emailAddress" id="emailAddress" class="newEmail" placeholder="albusdumbledore@hogwarts.com">
+                <button id="saveNewEmail" class="saveButtons newEmail" onclick="" type="submit">Save</button>
+                <p id="invalidemail">Invalid email address!</p>
+                <span class="currentDetails" id="userCurrentEmail" class="currentDetailsEmail">User's email address here</span>
+                <button type="" class="editButtons" id="editEmailButton" class="currentDetailsEmali" onclick="">Edit</button>
             </div>
-
-
             <button id="changePwd">Change password</button>
             <div id="changeUserName">
                 <span class="labels">User Name</span>
@@ -72,10 +72,9 @@
                 <button type="" id="editUsernameButton">Edit</button>
             </div>
 
-
         </div>
     </div>
-
+testing
     <footer>
         <section id="boxes">
             <section id="end">

@@ -352,3 +352,33 @@ body {
     position: relative;
     left: 73px;
 }
+
+#invalidTpNo {
+    display: none;
+    position: relative;
+    font-weight: normal;
+    font-family: sans-serif;
+    color: #c3073f;
+    left: 200px;
+}
+
+#invalidemail {
+    display: none;
+    position: relative;
+    font-weight: normal;
+    font-family: sans-serif;
+    color: #c3073f;
+    left: 200px;
+}
+
+.newAddress {
+    display: none;
+}
+
+.newTPNo {
+    display: none;
+}
+
+.newEmail {
+    display: none;
+}
