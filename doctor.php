@@ -7,16 +7,9 @@ $doc_specialization=$_POST['Dspecialization'];
 $doc_payment=$_POST['Dpayment'];
 $doc_hospital=$_POST['Dhospital'];
 
-$age=$_POST['age'];
-$address=$_POST['Address'];
-
-
-
-
-
 //Query
 $sql = "INSERT INTO Details (DID, Dname, Dspecialization, Dpayment, Dhospital)
-VALUES ('$doc_ID', 'doc_name', '$doc_specialization', '$doc_payment', '$doc_hospital');
+VALUES ('$doc_ID', '$doc_name', '$doc_specialization', '$doc_payment', '$doc_hospital');
 
 if (mysqli_query($conn, $sql)) {
 
