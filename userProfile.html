@@ -171,6 +171,56 @@
                 newUsername[i].style.display = "inline";
             }
         }
+
+
+         //validate email
+
+            var emailAddress = document.getElementById("emailAddress");
+
+
+            emailAddress.onfocus = () => {
+                if (!emailAddress.value.match(/(^[a-z0-9]+@[a-z]+.[a-z.]+)/i)) {
+                    document.getElementById("invalidemail").style.display = "block";
+                }
+            }
+
+
+            emailAddress.onblur = () => {
+                document.getElementById("invalidemail").style.display = "none";
+            }
+
+
+            emailAddress.onkeyup = () => {
+                if (emailAddress.value.match(/(^[a-z0-9]+@[a-z]+.[a-z.]+)/i)) {
+                    document.getElementById("invalidemail").style.display = "none";
+                } else {
+                    document.getElementById("invalidemail").style.display = "block";
+                }
+            }
+
+        //validate telephone number
+            var tpNo = document.getElementById("newtpno");
+
+
+            tpNo.onfocus = () => {
+                if (!tpNo.value.match(/[0-9]{3}-[0-9]{7}/)) {
+                    document.getElementById("invalidTpNo").style.display = "block";
+                }
+            }
+            tpNo.onblur = () => {
+                document.getElementById("invalidTpNo").style.display = "none";
+            }
+
+
+            tpNo.onkeyup = () => {
+                if (tpNo.value.match(/[0-9]{3}-[0-9]{7}/)) {
+                    document.getElementById("invalidTpNo").style.display = "none";
+                } else {
+                    document.getElementById("invalidTpNo").style.display = "block";
+                }
+
+            }
+
     </script>
 </body>
 
