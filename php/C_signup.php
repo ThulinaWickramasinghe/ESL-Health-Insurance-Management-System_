@@ -43,24 +43,34 @@ $Insurance_Plan=$_POST['insPlan'];
 $UserName=$_POST['userName'];
 $password=$_POST['pwd'];
 
-//checkbox///////////
-
-
-
-
-
-
-
-
 
 
 //Query
-$sql = "INSERT INTO Details (name, age, address)
-VALUES ('$name', '$age', '$address')";
+$query1 = "INSERT INTO Basic_D (fullName,NIC,pTpNo,eAddress,pAddress,DOB,marriage,nationality,Religion)
+VALUES ('$full_name','$nic','$Telephone_Number','$Email_Address','$Address','$Date_of_Birth','$Civil_Status','$Nationality','$Religion')";
 
-if (mysqli_query($conn, $sql)) {
+$query2 = "INSERT INTO Emp_D ( empName,empAddress,designation,empPeriod)
+VALUES('$Employer_name'.'$Emp_Address','$Designation','$Emp_Period')";
 
-  echo "<script>alert('New record created successfully')</script>";
+$query3 = "INSERT INTO Business_D (busName,busType,busAddress,busAnTurnover )
+VALUES('$Business_name','$Business_type','$Business_Address','$Annual_Turnover')";
+
+$query4 = "INSERT INTO SelfEmp_D (sEmpName,selfAnTurnover,sPeriod )
+VALUES('$Self_Employment','$Annual_over','$Self_employment_period')";
+
+$query5 = "INSERT INTO Income (empIncome,busSelfIncome,otherIncome,totIncome,totMonDed ) 
+VALUES('$Gross_Employed','$Gross_Business','$Other_Income','$Total_Income','$Tot_Expe')";
+
+$query6 = "INSERT INTO Bank_D (selectBankName,branchName,accNum,accType)
+VALUES('$BankName','$BranchName','$Acc_Num','$Acc_Type')";
+
+$query4 = "INSERT INTO Account_D (insPlan,userName,pwd )
+VALUES('$Insurance_Plan','$UserName','$password')";
+
+
+if (mysqli_query($conn, $query1)) {
+
+  echo "<script>alert('New record created successfully')</script>"; /////////////error checking//////////
 echo "<script>location.replace('signup.html')</script>";
 } else {
   echo "Error: " . $sql . "<br>" . mysqli_error($conn);
