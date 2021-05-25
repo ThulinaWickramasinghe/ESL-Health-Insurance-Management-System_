@@ -7,11 +7,12 @@
 }
 
 body {
-    background-image: linear-gradient(rgb(48, 224, 210, 0.2), rgba(48, 224, 210, 0.1)), url("../images/bicycle.jpg");
-    background-position: center;
+    background-image: linear-gradient(rgba(5, 146, 134, 0.288), rgba(48, 224, 210, 0.1)), url("../images/pexels-andreea-ch-1166644.jpg");
+    background-position:bottom;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+ 
 }
 
 #signIn,
