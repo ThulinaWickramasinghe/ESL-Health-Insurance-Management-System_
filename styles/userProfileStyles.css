@@ -270,6 +270,7 @@ body {
 }
 
 #userCurrentAddress {
+    display: inline;
     position: relative;
     left: 50px;
 }
@@ -286,7 +287,7 @@ body {
 
 #editAddressButton {
     position: relative;
-    left: 370px;
+    left: 371px;
 }
 
 #editTPButton {
@@ -296,7 +297,7 @@ body {
 
 #editEmailButton {
     position: relative;
-    left: 349px;
+    left: 351px;
 }
 
 #editUsernameButton {
