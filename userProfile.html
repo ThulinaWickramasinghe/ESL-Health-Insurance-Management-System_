@@ -41,13 +41,13 @@
     <div style="height: 60vh; font-weight: bold; margin-top: 20px">
         <div id="containerBox">
             <h3 id="welcome">Hi <span>Name Here</span>!</h3>
-            <img src="" alt="" id="profilePic">
+            <img src="" alt="user's profile picture" id="profilePic" style="border: 1px solid black;">
             <div id="addressDiv" class="subDiv">
                 <span class="labels">Address</span>
                 <input type="text" id="userAddress" name="userAddress" class="newAddress" placeholder="Hogwarts Castle, Highlands, Scotland, Great Britain">
                 <button id="saveNewAddress" class="saveButtons newAddress" onclick="" type="submit">Save</button>
                 <span class="currentDetailsAddress" id="userCurrentAddress">User's Address Here</span>
-                <button type="" class="editButtons" id="editAddressButton" class="currentDetailsAddress">Edit</button><br>
+                <button type="button" class="currentDetailsAddress editButtons" id="editAddressButton" onclick="showAddressEdit()">Edit</button><br>
             </div>
             <div id="tpNoDiv" class="subDiv">
                 <span class="labels">Telephone</span>
@@ -55,21 +55,31 @@
                 <button id="saveNewtpno" class="saveButtons newTPNo" onclick="" type="submit">Save</button>
                 <p id="invalidTpNo">Invalid telephone number!</p>
                 <span class="currentDetails currentDetailsTP" id="userCurrentTpNo">User's TP No here</span>
-                <button type="" class="editButtons currentDetailsTP" id="editTPButton" onclick="">Edit</button>
+                <button type="" class="editButtons currentDetailsTP" id="editTPButton" onclick="showTPEdit()">Edit</button>
             </div>
             <div id="emailDiv" class="subDiv">
                 <span class="labels">Email</span>
                 <input type="email" name="emailAddress" id="emailAddress" class="newEmail" placeholder="albusdumbledore@hogwarts.com">
                 <button id="saveNewEmail" class="saveButtons newEmail" onclick="" type="submit">Save</button>
                 <p id="invalidemail">Invalid email address!</p>
-                <span class="currentDetails" id="userCurrentEmail" class="currentDetailsEmail">User's email address here</span>
-                <button type="" class="editButtons" id="editEmailButton" class="currentDetailsEmali" onclick="">Edit</button>
+                <span id="userCurrentEmail" class="currentDetailsEmail currentDetails">User's email address here</span>
+                <button type="button" id="editEmailButton" class="currentDetailsEmail editButtons" onclick="showEmailEdit()">Edit</button>
             </div>
             <button id="changePwd">Change password</button>
+            <div>
+                <input type="password" name="" id="currentPwd" placeholder="Enter current password">
+                <input type="password" name="" id="newPwd" placeholder="Enter new password">
+                <input type="password" name="" id="retypeNewPwd" placeholder="Re-type new password">
+                <button type="submit" id="saveChangedPwd">Change</button>
+            </div>
+            <p id="invCurrentPwd">Invalid current password!</p>
+            <p id="invNewPwd">New password is invalid!</p>
+            <p id="mismatchPwd">New passwords don't match!</p>
             <div id="changeUserName">
-                <span class="labels">User Name</span>
-                <!-- <input type="text" name="newUserName" id="newUserName"> -->
-                <button type="" id="editUsernameButton">Edit</button>
+                <span class="labels currentUsername">User Name</span>
+                <button type="button" id="editUsernameButton" class="currentUsername" onclick="showUserNameEdit()">Edit</button>
+                <input type="text" name="newUserName" id="newUserName" class="newUsername" style="position: relative; width: 200px; right: 50px; display: none;">
+                <button id="saveNewEmail" class="saveButtons newUsername" onclick="" type="submit" style="position: relative; left:-50px; display: none;">Save</button> 
             </div>
 
         </div>
@@ -125,6 +135,102 @@
         </div>
 
     </footer>
+
+    <script>
+        function showAddressEdit()
+        {
+            var newAddress = document.getElementsByClassName("newAddress");
+            var currentDetailsAddress = document.getElementsByClassName("currentDetailsAddress");
+            for(let i = 0 ; i <= 1; i++){
+                newAddress[i].style.display = "inline";
+                currentDetailsAddress[i].style.display = "none";
+            }
+        }
+
+
+        function showTPEdit()
+        {
+            var currentDetailsTP = document.getElementsByClassName("currentDetailsTP");
+            var newTPNo = document.getElementsByClassName("newTPNo");
+
+               for (let i = 0; i <= 1; i++) {
+                currentDetailsTP[i].style.display = "none";
+                newTPNo[i].style.display = "inline";
+            }
+        }
+
+        function showEmailEdit() 
+        {
+            var currentDetailsEmail = document.getElementsByClassName("currentDetailsEmail");
+            var newEmail = document.getElementsByClassName("newEmail");
+
+            for (let i = 0; i <= 1; i++) {
+                currentDetailsEmail[i].style.display = "none";
+                newEmail[i].style.display = "inline";
+            }
+        }
+
+        function showUserNameEdit()
+        {
+            var currentUsername = document.getElementsByClassName("currentUsername");
+            var newUsername = document.getElementsByClassName("newUsername");
+
+            for (let i = 0; i <= 1; i++) {
+                currentUsername[i].style.display = "none";
+                newUsername[i].style.display = "inline";
+            }
+        }
+
+
+         //validate email
+
+            var emailAddress = document.getElementById("emailAddress");
+
+
+            emailAddress.onfocus = () => {
+                if (!emailAddress.value.match(/(^[a-z0-9]+@[a-z]+.[a-z.]+)/i)) {
+                    document.getElementById("invalidemail").style.display = "block";
+                }
+            }
+
+
+            emailAddress.onblur = () => {
+                document.getElementById("invalidemail").style.display = "none";
+            }
+
+
+            emailAddress.onkeyup = () => {
+                if (emailAddress.value.match(/(^[a-z0-9]+@[a-z]+.[a-z.]+)/i)) {
+                    document.getElementById("invalidemail").style.display = "none";
+                } else {
+                    document.getElementById("invalidemail").style.display = "block";
+                }
+            }
+
+        //validate telephone number
+            var tpNo = document.getElementById("newtpno");
+
+
+            tpNo.onfocus = () => {
+                if (!tpNo.value.match(/[0-9]{3}-[0-9]{7}/)) {
+                    document.getElementById("invalidTpNo").style.display = "block";
+                }
+            }
+            tpNo.onblur = () => {
+                document.getElementById("invalidTpNo").style.display = "none";
+            }
+
+
+            tpNo.onkeyup = () => {
+                if (tpNo.value.match(/[0-9]{3}-[0-9]{7}/)) {
+                    document.getElementById("invalidTpNo").style.display = "none";
+                } else {
+                    document.getElementById("invalidTpNo").style.display = "block";
+                }
+
+            }
+
+    </script>
 </body>
 
 </html>
