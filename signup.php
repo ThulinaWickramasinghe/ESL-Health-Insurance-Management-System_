@@ -61,7 +61,7 @@ VALUES ('$name', '$age', '$address')";
 if (mysqli_query($conn, $sql)) {
 
   echo "<script>alert('New record created successfully')</script>";
-echo "<script>location.replace('index.php')</script>";
+echo "<script>location.replace('signup.html')</script>";
 } else {
   echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }

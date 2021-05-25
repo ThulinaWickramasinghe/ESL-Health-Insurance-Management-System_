@@ -14,7 +14,7 @@ VALUES ('$doc_ID', '$doc_name', '$doc_specialization', '$doc_payment', '$doc_hos
 if (mysqli_query($conn, $sql)) {
 
   echo "<script>alert('New record created successfully')</script>";
-echo "<script>location.replace('index.php')</script>";
+echo "<script>location.replace('admin.html')</script>";
 } else {
   echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
