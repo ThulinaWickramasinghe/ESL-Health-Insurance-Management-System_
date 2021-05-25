@@ -65,7 +65,7 @@
                 <span id="userCurrentEmail" class="currentDetailsEmail currentDetails">User's email address here</span>
                 <button type="button" id="editEmailButton" class="currentDetailsEmail editButtons" onclick="showEmailEdit()">Edit</button>
             </div>
-            <button id="changePwd" onclick="enablePwdInput()">Change password</button>
+            <button type="button" id="changePwd" onclick="enablePwdInput()">Change password</button>
             <div class="pwdInputDiv">
                 <input type="password" name="" id="currentPwd" placeholder="Enter current password">
                 <input type="password" name="" id="newPwd" placeholder="Enter new password">
@@ -234,7 +234,7 @@
 //enable password input fields
 function enablePwdInput()
 {
-    document.getElementsByClassName("pwdInputDiv").style.visibility = "visible";
+    document.getElementsByClassName("pwdInputDiv")[0].style.visibility = "visible";
     document.getElementById("changePwd").style.visibility = "hidden";   
 }
 
