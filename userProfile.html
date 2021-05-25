@@ -66,6 +66,15 @@
                 <button type="button" id="editEmailButton" class="currentDetailsEmail editButtons" onclick="showEmailEdit()">Edit</button>
             </div>
             <button id="changePwd">Change password</button>
+            <div>
+                <input type="password" name="" id="currentPwd" placeholder="Enter current password">
+                <input type="password" name="" id="newPwd" placeholder="Enter new password">
+                <input type="password" name="" id="retypeNewPwd" placeholder="Re-type new password">
+                <button type="submit" id="saveChangedPwd">Change</button>
+            </div>
+            <p id="invCurrentPwd">Invalid current password!</p>
+            <p id="invNewPwd">New password is invalid!</p>
+            <p id="mismatchPwd">New passwords don't match!</p>
             <div id="changeUserName">
                 <span class="labels currentUsername">User Name</span>
                 <button type="button" id="editUsernameButton" class="currentUsername" onclick="showUserNameEdit()">Edit</button>

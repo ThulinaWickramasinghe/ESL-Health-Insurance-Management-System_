@@ -232,6 +232,7 @@ body {
 }
 
 #changePwd {
+    visibility: hidden;
     position: relative;
     padding: 8px;
     left: 50vw;
@@ -382,4 +383,56 @@ body {
 
 .newEmail {
     display: none;
+}
+
+#containerBox input[type="password"]{
+    position: relative;
+    width: 200px;
+}
+
+
+#currentPwd{
+    left: 400px;
+}
+#newPwd{
+    left: 400px;
+}
+#retypeNewPwd{
+    left: 400px;
+}
+
+#saveChangedPwd{
+    position: relative;
+    left: 405px;
+    padding-top: 6px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    background-color: #ddd;
+}
+
+
+#invCurrentPwd{
+    display: inline;
+    position: relative;
+    color: #c3073f;
+    left: 413px;
+    top: 10px;
+}
+
+#invNewPwd{
+    display: inline;
+    position: relative;
+    color: #c3073f;
+    left: 436px;
+    top: 10px;
+}
+
+#mismatchPwd{
+    display: inline;
+    position: relative;
+    color: #c3073f;
+    left: 450px;
+    top: 10px;
 }
