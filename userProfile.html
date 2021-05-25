@@ -65,8 +65,8 @@
                 <span id="userCurrentEmail" class="currentDetailsEmail currentDetails">User's email address here</span>
                 <button type="button" id="editEmailButton" class="currentDetailsEmail editButtons" onclick="showEmailEdit()">Edit</button>
             </div>
-            <button id="changePwd">Change password</button>
-            <div>
+            <button id="changePwd" onclick="enablePwdInput()">Change password</button>
+            <div class="pwdInputDiv">
                 <input type="password" name="" id="currentPwd" placeholder="Enter current password">
                 <input type="password" name="" id="newPwd" placeholder="Enter new password">
                 <input type="password" name="" id="retypeNewPwd" placeholder="Re-type new password">
@@ -229,6 +229,74 @@
                 }
 
             }
+
+
+//enable password input fields
+function enablePwdInput()
+{
+    document.getElementsByClassName("pwdInputDiv").style.visibility = "visible";
+    document.getElementById("changePwd").style.visibility = "hidden";   
+}
+
+
+//validate new password
+
+                var myPwd = document.getElementById("newPwd");
+                var letter = document.getElementById("simple");
+                var capital = document.getElementById("capital");
+                var number = document.getElementById("number");
+                var length = document.getElementById("length");
+                myPwd.onfocus = () => {
+                    var lowerCaseLetters = /[a-z]/g;
+                    var upperCaseLetters = /[A-Z]/g;
+                    var numbers = /[0-9]/g;
+                    if (myPwd.value.match(lowerCaseLetters) && myPwd.value.match(upperCaseLetters) && myPwd.value.match(numbers) && myPwd.value.length >= 8) {
+                        document.getElementById("invNewPwd").style.visibility = "hidden";
+                    } else {
+                        document.getElementById("invNewPwd").style.visibility = "visible";
+                    }
+                }
+                myPwd.onblur = () => {
+                    document.getElementById("invNewPwd").style.visibility = "hidden";
+                }
+                myPwd.onkeyup = () => {
+                    var lowerCaseLetters = /[a-z]/g;
+                    var upperCaseLetters = /[A-Z]/g;
+                    var numbers = /[0-9]/g;
+                    if (myPwd.value.match(lowerCaseLetters) && myPwd.value.match(upperCaseLetters) && myPwd.value.match(numbers) && myPwd.value.length >= 8) {
+                        document.getElementById("invNewPwd").style.visibility = "hidden";
+                    } else {
+                       document.getElementById("invNewPwd").style.visibility = "visible";
+                    }
+                }
+
+
+//validate retype password
+            var retypePwd = document.getElementById("retypeNewPwd");
+
+            retypePwd.onfocus = () => {
+                if (retypePwd.value != myPwd.value) {
+                    document.getElementById("mismatchPwd").style.visibility = "visible";
+                } else {
+                    document.getElementById("mismatchPwd").style.visibility = "hidden";
+                }
+            }
+
+            retypePwd.onblur = () => {
+                document.getElementById("mismatchPwd").style.visibility = "hidden";
+            }
+
+
+            retypePwd.onkeyup = () => {
+                if (retypePwd.value !== myPwd.value) {
+                    document.getElementById("mismatchPwd").style.visibility = "visible";
+                } else {
+                    document.getElementById("mismatchPwd").style.visibility = "hidden";
+                }
+            }
+                
+
+
 
     </script>
 </body>

@@ -232,7 +232,7 @@ body {
 }
 
 #changePwd {
-    visibility: hidden;
+    visibility: visible;
     position: relative;
     padding: 8px;
     left: 50vw;
@@ -384,10 +384,13 @@ body {
 .newEmail {
     display: none;
 }
-
+.pwdInputDiv{
+    visibility: hidden;
+}
 #containerBox input[type="password"]{
     position: relative;
     width: 200px;
+    display: inline;
 }
 
 
@@ -402,6 +405,7 @@ body {
 }
 
 #saveChangedPwd{
+    /* display: none; */
     position: relative;
     left: 405px;
     padding-top: 6px;
@@ -422,6 +426,7 @@ body {
 }
 
 #invNewPwd{
+    visibility: hidden;
     display: inline;
     position: relative;
     color: #c3073f;
@@ -430,6 +435,7 @@ body {
 }
 
 #mismatchPwd{
+    visibility: hidden;
     display: inline;
     position: relative;
     color: #c3073f;
