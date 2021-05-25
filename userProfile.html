@@ -62,14 +62,15 @@
                 <input type="email" name="emailAddress" id="emailAddress" class="newEmail" placeholder="albusdumbledore@hogwarts.com">
                 <button id="saveNewEmail" class="saveButtons newEmail" onclick="" type="submit">Save</button>
                 <p id="invalidemail">Invalid email address!</p>
-                <span class="currentDetails" id="userCurrentEmail" class="currentDetailsEmail">User's email address here</span>
-                <button type="" class="editButtons" id="editEmailButton" class="currentDetailsEmali" onclick="showEmailEdit()">Edit</button>
+                <span id="userCurrentEmail" class="currentDetailsEmail currentDetails">User's email address here</span>
+                <button type="button" id="editEmailButton" class="currentDetailsEmail editButtons" onclick="showEmailEdit()">Edit</button>
             </div>
             <button id="changePwd">Change password</button>
             <div id="changeUserName">
-                <span class="labels">User Name</span>
-                <!-- <input type="text" name="newUserName" id="newUserName"> -->
-                <button type="" id="editUsernameButton" onclick="showUserNameEdit()">Edit</button>
+                <span class="labels currentUsername">User Name</span>
+                <button type="button" id="editUsernameButton" class="currentUsername" onclick="showUserNameEdit()">Edit</button>
+                <input type="text" name="newUserName" id="newUserName" class="newUsername" style="position: relative; width: 200px; right: 50px; display: none;">
+                <button id="saveNewEmail" class="saveButtons newUsername" onclick="" type="submit" style="position: relative; left:-50px; display: none;">Save</button> 
             </div>
 
         </div>
@@ -129,8 +130,46 @@
     <script>
         function showAddressEdit()
         {
-            document.getElementsByClassName("newAddress").style.display = "inline";
-            document.getElementsByClassName("currentDetailsAddress").style.display = "none"; 
+            var newAddress = document.getElementsByClassName("newAddress");
+            var currentDetailsAddress = document.getElementsByClassName("currentDetailsAddress");
+            for(let i = 0 ; i <= 1; i++){
+                newAddress[i].style.display = "inline";
+                currentDetailsAddress[i].style.display = "none";
+            }
+        }
+
+
+        function showTPEdit()
+        {
+            var currentDetailsTP = document.getElementsByClassName("currentDetailsTP");
+            var newTPNo = document.getElementsByClassName("newTPNo");
+
+               for (let i = 0; i <= 1; i++) {
+                currentDetailsTP[i].style.display = "none";
+                newTPNo[i].style.display = "inline";
+            }
+        }
+
+        function showEmailEdit() 
+        {
+            var currentDetailsEmail = document.getElementsByClassName("currentDetailsEmail");
+            var newEmail = document.getElementsByClassName("newEmail");
+
+            for (let i = 0; i <= 1; i++) {
+                currentDetailsEmail[i].style.display = "none";
+                newEmail[i].style.display = "inline";
+            }
+        }
+
+        function showUserNameEdit()
+        {
+            var currentUsername = document.getElementsByClassName("currentUsername");
+            var newUsername = document.getElementsByClassName("newUsername");
+
+            for (let i = 0; i <= 1; i++) {
+                currentUsername[i].style.display = "none";
+                newUsername[i].style.display = "inline";
+            }
         }
     </script>
 </body>
