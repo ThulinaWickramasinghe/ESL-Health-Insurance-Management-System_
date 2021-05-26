@@ -1,15 +1,13 @@
 <?php
 include 'db.php';
 //Passing Values through the form
-$plan_ID=$_POST['PID'];
-$plan_name=$_POST['Pname'];
-$plan_description=$_POST['Pdescription'];
-$plan_price=$_POST['Pprice'];
+$staff_ID=$_POST['SID'];
+$staff_name=$_POST['Sname'];
 
 
 //Query
-$sql = "INSERT INTO Details (PID, Pname,Pdescription,Pprice)
-VALUES ('$plan_ID', '$plan_name',$plan_description,$plan_price);
+$sql = "INSERT INTO staff (SID, Sname)
+VALUES ('$staff_ID', '$staff_name');
 
 if (mysqli_query($conn, $sql)) {
 
