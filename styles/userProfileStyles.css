@@ -238,8 +238,16 @@ body {
     padding: 8px;
     left: 50vw;
     top: 40px;
+    background-color: dimgray;
+    border: none;
+    color: blanchedalmond;
+    border-radius: 5px;
 }
 
+#changePwd:hover{
+    background-color: darkgrey;
+    cursor: pointer;
+}
 #profilePic {
     position: relative;
     width: 200px;
@@ -258,7 +266,17 @@ body {
     padding-bottom: 4px;
     padding-left: 10px;
     padding-right: 10px;
+    background-color: lightslategrey;
+    color: #ccc;
+    border: none;
+    border-radius: 100px;
 }
+
+.editButtons:hover{
+    background-color: dimgrey;
+    cursor: pointer;
+}
+
 
 #tpNoDiv,
 #addressDiv {
@@ -269,7 +287,10 @@ body {
     position: inherit;
     left: 65px;
     bottom: 30px;
+    
 }
+
+
 
 #userCurrentAddress {
     display: inline;
@@ -307,7 +328,16 @@ body {
     padding-bottom: 4px;
     padding-left: 10px;
     padding-right: 10px;
+    background-color: lightslategrey;
+    color: #ccc;
+     border: none; 
+     border-radius: 100px;
 }
+
+#editUsernameButton:hover{
+    background-color: dimgrey;
+    cursor: pointer;
+} 
 
 #containerBox input {
     padding: 5px;
@@ -338,7 +368,15 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     border: none;
-    background-color: #ddd;
+    background-color: lightslategrey;
+    border-radius: 100px;
+    color: azure;
+}
+
+.saveButtons:hover{
+    cursor: pointer;
+    
+    background-color: grey;
 }
 
 #saveNewAddress {
@@ -363,6 +401,8 @@ body {
     font-family: sans-serif;
     color: #c3073f;
     left: 200px;
+    font-size: small;
+    margin-top: 2px;
 }
 
 #invalidemail {
@@ -372,6 +412,8 @@ body {
     font-family: sans-serif;
     color: #c3073f;
     left: 200px;
+     font-size: small;
+    margin-top: 2px;
 }
 
 .newAddress {
@@ -414,16 +456,24 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     border: none;
-    background-color: #ddd;
+    background-color: lightgray;
+    border-radius: 10px;
+    color: #35424a;
 }
 
+#saveChangedPwd:hover{
+    cursor: pointer;
+    background-color: gray;
+    color: white;
+}
 
 #invCurrentPwd{
     display: inline;
     position: relative;
     color: #c3073f;
-    left: 413px;
+    left: 425px;
     top: 10px;
+    font-size: small;
 }
 
 #invNewPwd{
@@ -431,8 +481,9 @@ body {
     display: inline;
     position: relative;
     color: #c3073f;
-    left: 436px;
+    left: 483px;
     top: 10px;
+    font-size: small;
 }
 
 #mismatchPwd{
@@ -440,6 +491,7 @@ body {
     display: inline;
     position: relative;
     color: #c3073f;
-    left: 450px;
+    left: 530px;
     top: 10px;
+    font-size: small;
 }
