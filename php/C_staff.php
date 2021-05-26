@@ -6,7 +6,7 @@ $staff_name=$_POST['Sname'];
 
 
 //Query
-$sql = "INSERT INTO Details (SID, Sname,)
+$sql = "INSERT INTO staff (SID, Sname)
 VALUES ('$staff_ID', '$staff_name');
 
 if (mysqli_query($conn, $sql)) {

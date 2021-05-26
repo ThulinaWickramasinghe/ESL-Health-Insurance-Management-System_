@@ -64,11 +64,11 @@ VALUES('$Gross_Employed','$Gross_Business','$Other_Income','$Total_Income','$Tot
 $query6 = "INSERT INTO Bank_D (selectBankName,branchName,accNum,accType)
 VALUES('$BankName','$BranchName','$Acc_Num','$Acc_Type')";
 
-$query4 = "INSERT INTO Account_D (insPlan,userName,pwd )
+$query7 = "INSERT INTO Account_D (insPlan,userName,pwd )
 VALUES('$Insurance_Plan','$UserName','$password')";
 
 
-if (mysqli_query($conn, $query1)) {
+if (mysqli_query($conn, $query1)&mysqli_query($conn, $query2)&mysqli_query($conn, $query3)&)mysqli_query($conn, $query4)&mysqli_query($conn, $query5)&mysqli_query($conn, $query6)&mysqli_query($conn, $query7)) {
 
   echo "<script>alert('New record created successfully')</script>"; /////////////error checking//////////
 echo "<script>location.replace('signup.html')</script>";

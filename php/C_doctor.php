@@ -8,7 +8,7 @@ $doc_payment=$_POST['Dpayment'];
 $doc_hospital=$_POST['Dhospital'];
 
 //Query
-$sql = "INSERT INTO Details (DID, Dname, Dspecialization, Dpayment, Dhospital)
+$sql = "INSERT INTO Doctor (DID, Dname, Dspecialization, Dpayment, Dhospital)
 VALUES ('$doc_ID', '$doc_name', '$doc_specialization', '$doc_payment', '$doc_hospital');
 
 if (mysqli_query($conn, $sql)) {
