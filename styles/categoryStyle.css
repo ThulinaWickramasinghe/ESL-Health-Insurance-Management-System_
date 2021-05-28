@@ -99,7 +99,7 @@
     }
     /* Add responsiveness - On small screens, display the navbar vertically instead of horizontally */
     
-    @media screen and (max-width: 600px) {
+    /* @media screen and (max-width: 600px) {
         .topnav .login-container {
             float: none;
         }
@@ -117,7 +117,7 @@
             border: 1px solid #ccc;
         }
     }
-    
+     */
     #wadana {
         color: teal;
         font-size: 17px;
@@ -223,7 +223,7 @@
     
     #mainDiv fieldset {
         /* background: linear-gradient(315deg, #75aabeb2 0%, #4697bdaf 74%); */
-        background: linear-gradient(rgba(48, 224, 209, 0.363), rgba(48, 224, 209, 0.247));
+        background: linear-gradient(rgba(3, 39, 36, 0.363), rgba(48, 224, 209, 0.247));
         border-radius: 10px;
         border: darkcyan;
     }

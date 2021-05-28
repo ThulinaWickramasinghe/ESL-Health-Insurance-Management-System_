@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: linear-gradient(rgba(48, 224, 209, 0.308), rgba(140, 184, 180, 0.315)), url("../images/pexels-your-photo-trips-2847862.jpg");
+    background-image: linear-gradient(rgba(48, 224, 209, 0.363), rgba(140, 184, 180, 0.315)), url("../images/pexels-your-photo-trips-2847862.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -115,7 +115,7 @@ body {
 
 /* Add responsiveness - On small screens, display the navbar vertically instead of horizontally */
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     .topnav .login-container {
         float: none;
     }
@@ -132,7 +132,7 @@ body {
     .topnav input {
         border: 1px solid #ccc;
     }
-}
+} */
 
 #wadana {
     color: teal;
@@ -235,7 +235,7 @@ body {
 #mainDiv h3{
     margin: 15px;
     text-decoration: underline #2196F3 4px;
-    color: #e8491d;
+    color: #e75d37;
 }
 #aboutImage{
     position: relative;
@@ -254,9 +254,14 @@ body {
 }
 
 #vision{
- 
+ color: peachpuff;
 }
 
 #mission{
+color: azure;
+}
 
+#whoWeAre p,#vision p,#mission p{
+margin-right: 10px;
+    
 }
