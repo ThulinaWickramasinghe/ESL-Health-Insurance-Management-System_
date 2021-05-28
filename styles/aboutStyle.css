@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: linear-gradient(rgb(48, 224, 210, 0.2), rgba(48, 224, 210, 0.1)), url("../images/pexels-your-photo-trips-2847862.jpg");
+    background-image: linear-gradient(rgba(48, 224, 209, 0.308), rgba(140, 184, 180, 0.315)), url("../images/pexels-your-photo-trips-2847862.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -210,8 +210,6 @@ body {
 }
 
 
-}
-
 /*     
     div.gallery {
         margin: 5px;
@@ -232,4 +230,33 @@ body {
     div.desc {
         padding: 15px;
         text-align: center;
-    } */
+    } 
+*/
+#mainDiv h3{
+    margin: 15px;
+    text-decoration: underline #2196F3 4px;
+    color: #e8491d;
+}
+#aboutImage{
+    position: relative;
+    float: left;
+    width: 500px;
+    height: 425px;
+    margin: 10px;
+    bottom: 13px;
+}
+#whoWeAre,#vision,#mission{
+    width: 100%;
+    color: gainsboro;
+    font-family: cursive;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+#vision{
+ 
+}
+
+#mission{
+
+}
