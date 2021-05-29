@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/adminStyles.css">
+    <title>ESL Health Insurance-Admin Panel</title>
+</head>
+<body>
+    <h1>ESL Health Insurance Admin Panel</h1>
+    <div id="navigation">
+        <button><a href="">Home</a></button>
+        <button type="button">Health Plans</button>
+        <button type="button">Doctor</button>
+        <button type="button">Staff</button>
+    </div>
+    <div id="editContent">
+        <div id="editButtons">
+            <button type="button">Insert</button>
+            <button type="button">Update</button>
+            <button type="button">Delete</button>
+        </div>
+        <div class="detailsToEdit" id="healthPlan">
+            <label for="healthPlanSelect">Select Health Plan</label>
+            <select name="healthPlanSelect" id="healthPlanSelect">
+                <option value="">Medicare</option>
+                <option value="">Medicaid</option>
+                <option value="">Individual & family +</option>
+                <option value="">Employer</option>
+            </select>
+            <br>
+            <label for="helathPlanDescription">Description</label>
+            <br>
+            <textarea name="helathPlanDescription" id="helathPlanDescription" cols="30" rows="10"></textarea>
+            <br>
+            <label for="planPrice">Health Plan Price</label>
+            <input type="number" name="planPrice" id="planPrice" placeholder="Rs.">.00
+            <br>
+        </div>
+        <div class="detailsToEdit" id="doctor">
+            <label for="DID">Doctor ID</label>
+            <input type="text" name="DID" id="DID">
+            <br>
+            <label for="Dname">Doctor's Name</label>
+            <input type="text" name="Dname" id="Dname">
+            <br>
+            <label for="Dspecialization">Doctor Specialization</label>
+            <input type="text" name="Dspecialization" id="Dspecialization">
+            <br>
+            <label for="Dpayment">Doctor's Payment</label>
+            <input type="number" name="Dpayment" id="Dpayment" placeholder="Rs.">.00
+            <br>
+            <label for="Dhospital">Doctor ID</label>
+            <input type="text" name="Dhospital" id="Dhospital">
+            <br>
+        </div>
+        <div class="detailsToEdit" id="staff">
+            <label for="SID">Staff Member ID</label>
+            <input type="text" name="SID" id="SID">
+            <br>
+            <label for="Sname">Staff Member Name</label>
+            <input type="text" name="Sname" id="Sname">
+            <br>
+        </div>
+    </div>
+</body>
+</html>
