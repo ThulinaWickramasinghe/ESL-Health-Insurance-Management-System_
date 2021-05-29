@@ -6,12 +6,33 @@
     box-sizing: border-box;
 }
 
-body {
-    background-image: linear-gradient(rgb(48, 224, 210, 0.2), rgba(48, 224, 210, 0.1)), url("../images/bicycle.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
+.main {
+    width: 100%; 
+    margin-top:300px;
+}
+.slider {
+    height: 804.1px;
+    background-image: url("../images/4th.jpg");
     background-size: cover;
-    position: relative;
+    background-attachment: fixed;
+    margin: -250px auto;
+    margin-bottom: 15px;
+    animation: slide 20s infinite;
+}
+
+@keyframes slide {
+    25% {
+        background-image: url("../images/1st.jpg");
+    }
+    50% {
+        background-image: url("../images/2nd.jpg");
+    }
+    75% {
+        background-image: url("../images/3rd.jpg");
+    }
+    100% {
+        background-image: url("../images/4th.jpg");
+    }
 }
 
 #signIn,
