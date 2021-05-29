@@ -1,6 +1,7 @@
 <?php
 include 'db.php';
 //Passing Values through the form
+
 $staff_ID=$_POST['SID'];
 $staff_name=$_POST['Sname'];
 

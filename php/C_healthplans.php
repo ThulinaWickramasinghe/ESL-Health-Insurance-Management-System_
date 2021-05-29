@@ -1,6 +1,7 @@
 <?php
 include 'db.php';
 //Passing Values through the form
+
 $plan_ID=$_POST['PID'];
 $plan_name=$_POST['Pname'];
 $plan_description=$_POST['Pdescription'];

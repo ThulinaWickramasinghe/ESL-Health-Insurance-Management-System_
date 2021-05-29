@@ -1,6 +1,7 @@
 <?php
 include 'db.php';
 //Passing Values through the form
+
 $doc_ID=$_POST['DID'];
 $doc_name=$_POST['Dname'];
 $doc_specialization=$_POST['Dspecialization'];

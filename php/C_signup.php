@@ -1,6 +1,8 @@
 <?php
 include 'db.php';
 //Passing Values through the form
+
+$User_ID = $_POST['UID'];
 $full_name=$_POST['fullName'];
 $nic=$_POST['NIC'];
 $Telephone_Number=$_POST['pTpNo'];
