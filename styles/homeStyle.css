@@ -6,6 +6,13 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: linear-gradient(rgb(48, 224, 210, 0.2), rgba(48, 224, 210, 0.1)), url("../images/blue.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
 .main {
     width: 100%; 
     margin-top:300px;
@@ -34,7 +41,6 @@
         background-image: url("../images/4th.jpg");
     }
 }
-
 #signIn,
 #signUp {
     float: right;
