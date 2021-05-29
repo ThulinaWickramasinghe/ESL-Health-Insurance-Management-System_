@@ -44,7 +44,6 @@ $Insurance_Plan=$_POST['insPlan'];
 $UserName=$_POST['userName'];
 $password=$_POST['pwd'];
 
-$sql = "UPDATE  SET Basic_D fullName ='$full_name'";
 
 if ($conn->query($sql) === TRUE) {
   echo "Record updated successfully";
