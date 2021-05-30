@@ -233,18 +233,22 @@ body {
     } 
 */
 #mainDiv h3{
-    margin: 15px;
-    text-decoration: underline #2196F3 4px;
-    color:aquamarine;
+    margin: 30px;
+    text-decoration: underline #1e1f1f 4px;
+    color:rgb(16, 19, 18);
 }
 #aboutImage{
-    position: relative;
+    position:relative;
     float: left;
     width: 500px;
-    height: 425px;
-    margin: 10px;
-    bottom: 13px;
-}
+    height: 400px;
+    margin: 30px;
+    bottom: 10px;
+    border: blue;
+    border-radius:10px;}
+
+
+
 #whoWeAre,#vision,#mission{
     width: 100%;
     color: black;
