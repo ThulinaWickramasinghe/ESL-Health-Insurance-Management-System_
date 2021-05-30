@@ -23,7 +23,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     margin: -250px auto;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
     animation: slide 20s infinite;
 }
 
