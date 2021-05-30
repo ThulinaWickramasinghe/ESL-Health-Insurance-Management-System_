@@ -1,7 +1,23 @@
-#navigation{}
+#navigation{
+    text-align: left;
+}
 #editContent{}
-#editButtons{}
+#editButtons{
+    text-align: justify;
+}
 .detailsToEdit{}
-#healthPlan{}
-#doctor{}
-#staff{}
+#healthPlan{
+    text-align:center;
+}
+#doctor{
+    text-align:center;
+}
+#staff{
+    text-align:center;
+}
+
+body{
+    background-color:greenyellow;
+    
+}
+ 
