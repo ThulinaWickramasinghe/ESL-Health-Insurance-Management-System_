@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: linear-gradient(rgb(48, 224, 210, 0.2), rgba(48, 224, 210, 0.1)), url("../images/pexels-karolina-grabowska-4386466.jpg");
+  background-image: linear-gradient(rgba(54, 194, 236, 0.2), rgba(48, 224, 210, 0.1)), url("../images/Back_contact_us.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -32,7 +32,7 @@ body {
   font-size: 26px;
   margin-top:80px;
   margin-bottom: 10px;
- 
+   
 }
 
 .sub-title{

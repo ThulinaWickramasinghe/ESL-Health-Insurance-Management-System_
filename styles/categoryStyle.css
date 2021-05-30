@@ -131,7 +131,7 @@
     }
     
     #legacy {
-        color: dimgray;
+        color:dimgray;
         position: absolute;
         width: 30%;
         text-align: justify;
@@ -200,9 +200,14 @@
         height: 45%;
         width: 35%;
         margin: 10px;
-        color: azure;
+        color: black;
     }
     
+    #sizeFont {
+        font-size: 25px;
+        color: darkmagenta;
+        font-weight: bold;
+    }
     #medicareP,
     #InFmP {
         float: left;
@@ -228,7 +233,7 @@
         border: darkcyan;
     }
     
-    #mainDiv fieldset img {}
+    
     
     #footer {
         bottom: 0vh;
