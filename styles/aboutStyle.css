@@ -235,7 +235,7 @@ body {
 #mainDiv h3{
     margin: 15px;
     text-decoration: underline #2196F3 4px;
-    color: #e75d37;
+    color:aquamarine;
 }
 #aboutImage{
     position: relative;
@@ -247,18 +247,18 @@ body {
 }
 #whoWeAre,#vision,#mission{
     width: 100%;
-    color: gainsboro;
+    color: black;
     font-family: cursive;
     font-size: 17px;
-    font-weight: normal;
+    font-weight:bolder;
 }
 
 #vision{
- color: peachpuff;
+ color:black;
 }
 
 #mission{
-color: azure;
+color: black;
 }
 
 #whoWeAre p,#vision p,#mission p{
