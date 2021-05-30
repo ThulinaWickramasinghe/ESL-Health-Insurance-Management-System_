@@ -7,13 +7,40 @@
 }
 
 body {
-    background-image: linear-gradient(rgb(48, 224, 210, 0.2), rgba(48, 224, 210, 0.1)), url("../images/bicycle.jpg");
+    background-image: linear-gradient(rgb(48, 224, 210, 0.2), rgba(48, 224, 210, 0.1)), url("../images/blue.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
+.main {
+    width: 100%; 
+    margin-top:300px;
+}
+.slider {
+    height: 804.1px;
+    background-image: url("../images/4th.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    margin: -250px auto;
+    margin-bottom: 15px;
+    animation: slide 20s infinite;
+}
 
+@keyframes slide {
+    25% {
+        background-image: url("../images/1st.jpg");
+    }
+    50% {
+        background-image: url("../images/22nd.jpg");
+    }
+    75% {
+        background-image: url("../images/3rd.jpg");
+    }
+    100% {
+        background-image: url("../images/4th.jpg");
+    }
+}
 #signIn,
 #signUp {
     float: right;

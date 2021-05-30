@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.css">
 </head>
 
-<body>
+
     <header>
         <div id="top">
 
@@ -38,24 +38,41 @@
         </div>
     </header>
 
-    <div id="contentContainer">
-        <div id="paymentContainer">
-            <form action="">
-                <p>Pay Online</p>
-                <br>
-               <input type="text" name="" id="" placeholder="Cardholder's name">
-               <br>
-               <br>
-               <input type="number" name="" id="" placeholder="Card Number">
-               <br>
-               <br>
-               <label for="">Expiry</label>
-               <br>
-               <input type="month" name="expiryMonth" id="expiryMonth">
-               <input type="number" name="CVC" id="CVC" placeholder="CVC">
-               <button type="submit">Pay</button>
-            </form>
+    <div class="area1"></div>
+    <div class="main">
+       <div class="title" >Online Payment</div>
+
+<div class="details">
+    <div class="btn">
+        <p class="p1">Card Type</p> <p class="p2">:</p> <input type="radio"  name="Card"  value="Credit Card" requied> <img src="./IMAGES/visa card.png" height="20" width="45">
+        <input type="radio"  name="Card"  value="Debit Card" requied> <img src="./IMAGES/master card.png" height="20" width="38">
+    </div>
+    <div class="inputDetails">
+        <div class="Cnumber">
+            <p class="p1">Card Number</p><p class="p2">:</p> <input type="text" class="det" placeholder="Valid Card Number">
         </div>
+       <br>
+        <div class="amount">
+            <p class="p1">Amount</p><p class="p2">:</p>  <input type="text"  class="det" placeholder="Rs 00.00">
+        </div>
+        <br>
+        <div class="dateNmounth">
+            <p class="p1">Expire Date and Month</p> <p class="p2">:</p>   <input type="text" class="det" placeholder="DD / MM"> 
+        </div>  
+        <br>
+        <div class="cvn">
+            <p class="p1">CVN</p><p class="p2">:</p>  <input type="text"  class="det" placeholder="000">
+        </div>
+        <br>
+    </div>
+</div>
+    <div class="agree"> 
+        <input type="radio" >I here by authorize the debit to my master/visa account in favor of Easy Sri Lanka Insurance Pvt(ltd).
+    </div>
+    
+    <div class="submit">
+        <input type="button" value="Submit">
+    </div>
     </div>
     <footer>
         <section id="boxes">
@@ -110,6 +127,6 @@
 
 
     </footer>
-</body>
+
 
 </html>

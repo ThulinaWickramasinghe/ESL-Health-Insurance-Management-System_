@@ -6,13 +6,186 @@
     box-sizing: border-box;
 }
 
-body {
-    background-image: linear-gradient(rgb(48, 224, 210, 0.2), rgba(48, 224, 210, 0.1)), url("../images/bicycle.jpg");
-    background-position: center;
+.area1{
+    background-image: url("../IMAGES/payment.jpg");
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
-    position: relative;
-}
+    height: 610px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: -620px;
+    filter: blur(5px);
+    
+  }
+  
+  .main{
+    transform: translate(5%,-3%);
+    margin-bottom: -100px;
+    margin-right: 140px;
+  
+   
+    
+  }
+  
+  
+  
+  .title{
+      text-align:center;
+      font-style: bold;
+      font-weight: 900;
+      font-size: 26px;
+      margin:30px;
+      margin-bottom: 50px;
+      margin-top: 60px;
+    }
+    
+    .details{
+      padding:0 0 0 150px;
+      font-weight: bold;
+    }
+    
+  
+    .details .btn{
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 20px;
+    }
+  
+    .details .btn input{
+      margin:0 10px 0 10px;
+      width: 20px;
+      height: 20px;
+  
+    }
+  
+    .btn p.p2{
+      margin-left: 135px;
+    }
+  
+    .details .inputDetails .Cnumber{
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .details .inputDetails .Cnumber input{
+      margin-left: 10px;
+    }
+    .details .inputDetails .amount{
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .details .inputDetails .amount input{
+      margin-left: 10px;
+    }
+  
+    .amount p.p2{
+      margin-left: 151px;
+      margin-top: 12px;
+    }
+    .amount p.p1{
+      margin-top: 12px;
+    }
+  
+    .details .inputDetails .dateNmounth{
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .details .inputDetails .dateNmounth input{
+      margin-left: 10px;
+    }
+  
+    .dateNmounth p.p2{
+      margin-left: 38px;
+      margin-top: 12px;
+    }
+    .dateNmounth p.p1{
+      margin-top: 12px;
+    }
+    
+    .details .inputDetails .cvn{
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .details .inputDetails .cvn input{
+      margin-left: 10px;
+    }
+  
+    .cvn p.p2{
+      margin-left: 177px;
+      margin-top: 12px;
+    }
+    .cvn p.p1{
+      margin-top: 12px;
+    }
+  
+    .credit{
+      text-align:left;
+      margin-top:30px;
+      margin-bottom:25px;
+      margin-left:230px;
+  
+  }
+  
+  .debit{
+      text-align:left;
+      margin-top:30px;
+      margin-bottom:15px;
+      margin-left:140px;
+  
+  }
+  
+  .det{
+    width:300px;
+    padding:0 10px;
+    text-align:left;
+    border-radius: 15px;
+  }
+  
+  
+  .Cnumber p.p2{
+    margin-left: 110px;
+    margin-top: 12px;
+  }
+  .Cnumber p.p1{
+    margin-top: 12px;
+  }
+  
+  .agree{
+   text-align:left;
+   margin-top:30px;
+   margin-left:-60px;
+   padding:0 0 0 200px;
+  }
+  
+  .agree input{
+    width: 20px;
+    height: 15px;
+    margin: 10px;
+  }
+  
+  .submit{
+      text-align:right ;
+      padding:50px 250px 0 0;
+      
+  }
+  .submit input{
+      width:15%;
+      height:50px;
+      background: #41A317;
+      color: white;
+      padding: 4px;
+      border-color: #008000;
+      font-size: 1em;
+      margin-bottom: 40px;
+  }
+  
+  .submit input:hover{
+    background-color: #008000;
+  }
 
 #signIn,
 #signUp {
