@@ -22,11 +22,11 @@
 
         <div class="topnav">
             <a class="active" href="home.html">Home</a>
-            <a href="category.html">Category</a>
-            <a href="products_services.html">Products & Services</a>
+            <a href="category.php">Category</a>
+            <a href="products_services.php">Products & Services</a>
             <a href="contact.html">Contact Us</a>
             <a href="about.html">About Us</a>
-            <a href="signup.html">Sign Up</a>
+            <a href="signup.php">Sign Up</a>
             <div class="login-container">
                 <form action="/action_page.php">
                     <input type="text" placeholder="Username" name="username">
@@ -40,27 +40,28 @@
     <div class="area1"></div>
     <div class="main">
        <div class="title" >Online Payment</div>
-
+<form action="payment.php" Method="post">
 <div class="details">
     <div class="btn">
-        <p class="p1">Card Type</p> <p class="p2">:</p> <input type="radio"  name="Card"  value="Credit Card" requied> <img src="./IMAGES/visa card.png" height="20" width="45">
+        <p class="p1">Card Type</p> <p class="p2">:</p> 
+		<input type="radio"  name="Card"  value="Credit Card" requied> <img src="./IMAGES/visa card.png" height="20" width="45">
         <input type="radio"  name="Card"  value="Debit Card" requied> <img src="./IMAGES/master card.png" height="20" width="38">
     </div>
     <div class="inputDetails">
         <div class="Cnumber">
-            <p class="p1">Card Number</p><p class="p2">:</p> <input type="text" class="det" placeholder="Valid Card Number">
+            <p class="p1">Card Number</p><p class="p2">:</p> <input type="text" name="cnumber" class="det" placeholder="Valid Card Number">
         </div>
        <br>
         <div class="amount">
-            <p class="p1">Amount</p><p class="p2">:</p>  <input type="text"  class="det" placeholder="Rs 00.00">
+            <p class="p1">Amount</p><p class="p2">:</p>  <input type="text" name="amount" class="det" placeholder="Rs 00.00">
         </div>
         <br>
         <div class="dateNmounth">
-            <p class="p1">Expire Date and Month</p> <p class="p2">:</p>   <input type="text" class="det" placeholder="DD / MM"> 
+            <p class="p1">Expire Date and Month</p> <p class="p2">:</p>   <input name="expdate" type="text" class="det" placeholder="DD / MM"> 
         </div>  
         <br>
         <div class="cvn">
-            <p class="p1">CVN</p><p class="p2">:</p>  <input type="text"  class="det" placeholder="000">
+            <p class="p1">CVN</p><p class="p2">:</p>  <input type="text" name="cvn" class="det" placeholder="000">
         </div>
         <br>
     </div>
@@ -70,62 +71,33 @@
     </div>
     
     <div class="submit">
-        <input type="button" value="Submit">
+        <input type="submit" name="formsubmit"  value="Submit">
     </div>
     </div>
-    <footer>
-        <section id="boxes">
-            <section id="end">
-                <div class="container">
-                    <div class="box">
-                        <div id="legacy">
-                            <h3>Easy Sri Lanka Insurance Pvt(ltd)</h3>
-                            <p>Since 1987, Easy Sri Lanka Insurance Pvt(ltd) is reputed as a huge cooperation in the insurance sector. While looking after Sri Lankans when they need us the most, our company is giving an immense contribution to the economy
-                                as well.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div id="contactInfo">
-                            <ul>
-                                <li><i class="fas fa-map-marker-alt"></i>&nbsp; 106,Havelock Road,Colombo 05</li>
-                                <br>
-                                <li><i class="fas fa-phone-square-alt"></i> &nbsp;0112 461 461</li>
-                                <br>
-                                <li><i class="fas fa-envelope"></i> &nbsp;easysrilanka1@gmail.com</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div id="social">
-                            <h4>Follow Us On Social Media</h4>
-                            <br>
-                            <ul>
-                                <li>
-                                    <a href="https://twitter.com/SriEasy"><i class="fab fa-twitter-square"></i>&nbsp;Twitter</a>
-                                </li>
-
-                                <li>
-                                    <a href="https://www.facebook.com/EasySriLanka/"><i class="fab fa-facebook-square"></i>&nbsp;Facebook</a>
-                                </li>
-
-                                <li>
-                                    <a href="https://www.youtube.com/channel/UCn034vqtqCiakhtZc9N_F4g"><i class="fab fa-youtube"></i>Youtube</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-           
-        </section>
-        <div id="copyrights">
-            <p>&copy; 2021 Easy Sri Lanka Health Insurance Pvt(ltd). All rights reserved.</p>
-        </div>
+	
+</form>
+<?php
+   if(isset($_POST['formsubmit'])){
+	   include './php/C_database.php';
+	    $Card_type=$_POST['Card'];
+		$Card_number=$_POST['cnumber'];
+		$Amount=$_POST['amount'];
+		$Expired=$_POST['expdate'];
+		$CVN=$_POST['cvn'];
+		
+		$sqlstmt="INSERT INTO payment(payment_type,card_number,expire_date,amount,cvn)
+		          VALUES ('$Card_type','$Card_number','$Expired',$Amount,$CVN)";
+		
+		if(!mysqli_query($conn,$sqlstmt)){
+			echo "Error becuse".$conn->error;
+		}
+	   
+	   
+	   
+	   
+   }
 
 
-    </footer>
 
 
-</html>
+?>	

@@ -1,3 +1,35 @@
+
+ 
+ <?php 
+
+include './php/C_database.php';
+
+$sql = "SELECT PID,Pname,Pdescription,Pprice FROM  HealthPlans";
+
+$Plan_ID=array();
+$Plan_Name=array();
+$Plan_Description=array();
+$Plan_Price=array();
+
+
+
+if($result = mysqli_query($conn, $sql)){      
+if ($result->num_rows > 0) {
+  // output data of each row
+  while($row =$result->fetch_assoc()) {
+   array_push($Plan_ID,$row["PID"]);
+   array_push( $Plan_Name,$row["Pname"]);
+   array_push($Plan_Description,$row["Pdescription"]);
+   array_push( $Plan_Price,$row["Pprice"]) ;
+  }
+} else {
+  echo "0 results";
+}
+} else{
+  echo "Error because :".$conn->error;
+}
+?> 
+ 
  <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +45,7 @@
 <body>
     <header>
         <div id="top">
-            <?php echo "cat"?>
+          
 
             <img src="./images/logoFinal.png" alt="" id="logo" height="100px">
             <h1 id="brand">Health Insurance</h1>
@@ -23,11 +55,11 @@
 
         <div class="topnav">
             <a href="home.html">Home</a>
-            <a class="active" href="category.html">Category</a>
-            <a href="products_services.html">Products & Services</a>
+            <a class="active" href="category.php">Category</a>
+            <a href="products_services.php">Products & Services</a>
             <a href="contact.html">Contact Us</a>
             <a href="about.html">About Us</a>
-            <a href="signup.html">Sign Up</a>
+            <a href="signup.php">Sign Up</a>
             <div class="login-container">
                 <form action="/action_page.php">
                     <input type="text" placeholder="Username" name="username">
@@ -43,66 +75,44 @@
         <h2 style="position:relative; font-weight: normal; text-align: center; right: 20px; margin-top: 30px; font-size: 25px; font-family: cursive;color: dimgray;">We offer you a variety of insurance plans so that you can select the one that suits you the best...</h2>
         <div id="medicareP" style="overflow: auto;">
             <fieldset onclick="displayMecicareDetails()">
-                <legend id="sizeFont">Medicare Plans</legend>
+        
+                <legend id="sizeFont"><?php echo $Plan_Name[0];?></legend>
                 <img src="./images/medicare-coupleFinale.jpeg" alt="" style="float:left; border-radius: 10px;">
-                <p id="PnP">Plan ID : PID0001</p>
-                <p>Find options for Medicare plans, health insurance for people who are 65 or older, or those under 65 who may qualify because of a disability or another special situation.</p>
-
-                <ul style="margin-left: 237px;">
-                    <li>Medicare Advantage Plans</li>
-                    <li>Medicare supplement Plans</li>
-                    <li>Medicare Prescription Drug Plans</li>
-                    <li>Dual Eligible Special Needs Plans</li>
-                    <li id="PnP">Price : Rs.500,000</li>
-                </ul>
+                <p id="PnP">Plan ID : <?php echo $Plan_ID[0];?></p>
+                <p><?php echo $Plan_Description[0];?></p>
+                <p><?php echo $Plan_Price[0];?></p>
+               
             </fieldset>
         </div>
         <div id="InFmP" style="overflow: auto;">
             <fieldset>
-                <legend id="sizeFont">Individual & Family +</legend>
+                <legend id="sizeFont"><?php echo $Plan_Name[1];?></legend>
                 <img src="./images/individualAndFamilyPlanResized.jpeg" alt="" style="float: left; border-radius: 10px;">
-                <p id="PnP">Plan ID : PID0002</p>
-                <p>Browse plans for people and their families before age 65 and coverage to add on to other insurance plans, like term life or accident insurance.</p>
-                <br>
-                <ul style="margin-left: 240px;">
-                    <li>Short term insurance</li>
-                    <li>Student health insurance</li>
-                    <li>Hospitalization insurance</li>
-                    <li>Vision insurance</li>
-                    <li id="PnP">Price : Rs.550,000</li>
-                </ul>
+                <p id="PnP">Plan ID : <?php echo $Plan_ID[1];?></p>
+                <p><?php echo $Plan_Description[1];?></p>
+                
+                 <p><?php echo $Plan_Price[1];?></p>
             </fieldset>
         </div>
 
         <div id="medicaidP" style="overflow: auto;">
             <fieldset>
-                <legend id="sizeFont">Medicaid Plans </legend>
+                <legend id="sizeFont"><?php echo $Plan_Name[2];?></legend>
                 <img src="./images/medicaidPlanResized.jpeg" alt="" style="float: left; border-radius: 10px;">
-                <p id="PnP">Plan ID : PID0003</p>
-                <p>Find low cost medicaid plans for people who have limited incomes</p>
+                <p id="PnP">Plan ID : <?php echo $Plan_ID[2];?></p>
+                <p><?php echo $Plan_Description[2];?></p>
                 <br>
-                <ul style="margin-left: 240px;">
-                    <li>Medicaid plans</li>
-                    <li>Dual Special Needs Plans</li>
-                    <li>Children's Health Insurance Program</li>
-                    <li id="PnP">Price : Rs.650,000</li>
-                </ul>
+                 <p><?php echo $Plan_Price[2];?></p>
             </fieldset>
         </div>
         <div id="employerP" style="overflow: auto;">
             <fieldset>
-                <legend id="sizeFont">Employer Plans</legend>
+                <legend id="sizeFont"><?php echo $Plan_Name[3];?></legend>
                 <img src="./images/employerPanResized.jpeg" alt="" style="float: left; border-radius: 10px; ">
-                <p id="PnP">Plan ID : PID0004</p>
-                <p>Shop and get online quotes for health insurance plans for your employees, including medical, vision, dental, disability and more.</p>
-                <br>
-                <ul style="margin-left: 243px;">
-                    <li>Small business plan</li>
-                    <li>Large business plan</li>
-                    <li>Self-employed plans</li>
-                    <li>Public sector</li>
-                    <li id="PnP">Price : Rs.550,000</li>
-                </ul>
+                <p id="PnP">Plan ID : <?php echo $Plan_ID[3];?></p>
+                <p><?php echo $Plan_Description[3];?></p>
+                <p><?php echo $Plan_Price[3];?></p>
+             
             </fieldset>
         </div>
     </div>
