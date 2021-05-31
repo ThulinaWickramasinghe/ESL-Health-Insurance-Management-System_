@@ -1,0 +1,104 @@
+.flip-card {
+  background-color: transparent;
+  width: 5cm;
+  height: 6cm;
+  perspective: 1000px; 
+  margin-top: 60px;
+  margin-bottom: 60px;
+  font-family: sans-serif;
+  font-size: medium;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 5cm;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 5cm;
+  height: 7cm;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  border-radius: 5px;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.benifits{
+  padding: 5px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.ben_image{
+  height: 2cm;
+  width: 2cm; 
+  padding: 5px;
+}
+
+.boc_images{
+  display: inline;
+}
+
+#boc-card{
+  background-color: rgb(221, 238, 113);
+}
+
+#maximise{
+  width: 3cm;
+  height: 3cm;
+}
+
+.topic{
+  text-align: center;
+  font-family:cursive;
+  
+}
+
+.t{
+  font-family: cursive;
+}
+
+#medical_checkup{
+  background-color: rgb(173, 173, 250);
+}
+
+#first_channeling{
+  background-color: rgb(228, 116, 116);
+}
+
+#gym{
+  background-color: rgb(165, 236, 95);
+}
+
+#lucky_draw{
+  background-color: rgb(206, 127, 206);
+}
+
+.flipBackText{
+    margin: 5px;
+    margin-top: 40px;
+}
