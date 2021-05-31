@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,6 +13,7 @@
 <body>
     <header>
         <div id="top">
+            <?php echo "cat"?>
 
             <img src="./images/logoFinal.png" alt="" id="logo" height="100px">
             <h1 id="brand">Health Insurance</h1>
