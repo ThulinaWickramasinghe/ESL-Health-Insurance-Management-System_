@@ -188,6 +188,10 @@
         color: darkmagenta;
         font-weight: bold;
     }
+
+    #PnP {
+        color:blue;
+    }
     #medicareP,
     #InFmP {
         float: left;
