@@ -1,205 +1,94 @@
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    box-sizing: border-box;
-}
-
-body {
-    background-image:  url("../images/pexels-julia-larson-6455683.jpg");
-    background-position: 0px -500px;
+.area1{
+    background-image: url("../Images/how\ to\ choose\ family\ health\ insurance\ plan.jpg");
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
-    position: relative;
-}
-
-#contentDiv{
-    background-color: linear-gradient(rgba(40, 221, 212, 0.212), rgba(48, 224, 210, 0.1));
-}
-
-#signIn,
-#signUp {
-    float: right;
-    margin: 10px;
-    width: 100px;
-}
-
-#top {
-    margin: 10px;
-    /* background: linear-gradient(#380036, #0CBABA); */
-    /* background: linear-gradient(#80ff72, #7ee8fa); */
-}
-
-#logo {
-    display: inline-block;
-}
-
-#brand {
-    display: inline-block;
-    color:#88a075;
-}
-
-
-/* Style the navbar */
-
-.topnav {
-    overflow: hidden;
-    background-color: #e9e9e9;
-}
-
-
-/* Navbar links */
-
-.topnav a {
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-    font-size: 17px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 500;
-}
-
-
-/* Navbar links on mouse-over */
-
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-
-/* Active/current link */
-
-.topnav a.active {
-    background-color: #2196F3;
-    color: white;
-}
-
-
-/* Style the input container */
-
-.topnav .login-container {
-    float: right;
-}
-
-
-/* Style the input field inside the navbar */
-
-.topnav input {
-    padding: 6px;
-    margin-top: 8px;
-    font-size: 17px;
-    border: none;
-    width: 150px;
-    /* adjust as needed (as long as it doesn't break the topnav) */
-}
-
-
-/* Style the button inside the input container */
-
-.topnav .login-container button {
-    float: right;
-    padding: 6px;
-    margin-top: 8px;
-    margin-right: 16px;
-    background: #ddd;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-}
-
-.topnav .login-container button:hover {
-    background: #ccc;
-}
-
-
-
-#wadana {
-    color: rgb(17, 192, 192);
-    font-size: 17px;
-    position: relative;
-    float: right;
-    left: -100px;
-    top: 50px;
-    right: 200px;
-    font-family: cursive;
-    font-weight: 500;
-}
-
-#legacy {
-    color: dimgray;
-    position: absolute;
-    width: 30%;
-    text-align: justify;
-    /* top: 80%; */
-}
-
-#copyrights {
-    font-family: monospace;
-    position: absolute;
+    height: 600px;
     width: 100%;
-    /* height: 7%; */
-    color: #ffffff;
-    background-color: #e8491d;
-    text-align: center;
+    margin-top: 20px;
+    margin-bottom: -500px;
+    filter: blur(2px);
+  }
+  
+  
+  .main{
+    transform: translate(5%,-28%);
+    margin-bottom: -100px;
+    margin-right: 140px;
+  
+  }
+  
+  
+  .title{
+      text-align:center;
+      font-style: bold;
+      font-weight: 1000;
+      font-size: 26px;
+      margin-top:80px;
+      margin-bottom: 10px;
+     
+    }
+  
+    .sub-title{
+      text-align:left;
+      font-weight: 800;
+      font-size: 20px;
+      margin-top: 0px;
+      margin-bottom:5px;
+      padding: 0 0 0 150px;
+    }
+  
+    .detail{
+      text-align:left;
+      font-weight: 100;
+      font-size: 17px;
+      margin-bottom: 20px;
+      padding: 0 0 0 160px;
+    }
+    .map{
+        margin-top:30px;
+        margin-right: 10px;
+    }
+  
+    .socialmediaArea{
+    width:100%;
+    height: auto;
     padding: 20px;
-}
-
-#boxes {
-    /* position: relative; */
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 20px;
-    background: #35424a;
-    top: 80%;
-    display: block;
-}
-
-#boxes .box {
-    float: left;
-    text-align: center;
-    width: 30%;
-    padding: 10px;
-    margin: 10px;
-}
-
-.container {
-    width: 100%;
-    margin: auto;
-    overflow: hidden;
-}
-
-#contactInfo {
-    color: lightsteelblue;
-    position: relative;
-    text-align: left;
-    left: 50%;
-}
-
-#social {
-    position: relative;
-    text-align: left;
-    left: 60%;
-}
-
-#social ul li a {
-    color: dimgray;
-}
-
-#social ul li a :hover {
-    color: darkolivegreen;
-}
-
-
-#leftDiv ,#rightDiv{
-    border: 1px solid black;
-    width: 50%;
-    height:59vh;
-    float: right; 
-}
-
+    margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+    }
+  
+    .social-media{
+      text-align:right;
+      font-weight: 830;
+      font-size: 18px;
+      margin-right: 59px;
+    }
+  
+    .icons{
+       text-align:right;
+       font-size: 30px;
+       text-decoration: none;
+    }
+  
+    .icons .icons{
+      text-decoration: none;
+      border-radius: 4px;
+    
+  }
+  
+    .icons a{
+        padding:8px 15px;
+        text-decoration: none;
+        border-radius: 4px;
+    }
+  
+    .icons a:hover{
+      color:red;
+  }
+  
+   
 
 
