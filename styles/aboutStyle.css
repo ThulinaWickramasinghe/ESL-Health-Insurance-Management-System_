@@ -233,8 +233,8 @@ body {
     } 
 */
 #mainDiv h3{
-    margin: 30px;
-    text-decoration: underline #1e1f1f 4px;
+    margin: 20px;
+    text-decoration: underline #d15c26 4px;
     color:rgb(16, 19, 18);
 }
 #aboutImage{
@@ -251,21 +251,13 @@ body {
 
 #whoWeAre,#vision,#mission{
     width: 100%;
-    color: black;
+    color: rgb(39, 53, 53);
     font-family: cursive;
-    font-size: 17px;
+    font-size: 15px;
     font-weight:bolder;
 }
 
-#vision{
- color:black;
-}
-
-#mission{
-color: black;
-}
 
 #whoWeAre p,#vision p,#mission p{
-margin-right: 10px;
-    
+margin-right: 10px; 
 }
