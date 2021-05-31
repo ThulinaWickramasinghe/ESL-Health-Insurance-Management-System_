@@ -1,10 +1,11 @@
 .flip-card {
   background-color: transparent;
-  width: 5cm;
+  width: 4cm;
   height: 6cm;
   perspective: 1000px; 
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin: 2px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-family: sans-serif;
   font-size: medium;
 }
@@ -12,7 +13,7 @@
 /* This container is needed to position the front and back side */
 .flip-card-inner {
   position: relative;
-  width: 5cm;
+  width: 4cm;
   height: 100%;
   text-align: center;
   transition: transform 0.8s;
@@ -27,8 +28,8 @@
 /* Position the front and back side */
 .flip-card-front, .flip-card-back {
   position: absolute;
-  width: 5cm;
-  height: 7cm;
+  width: 4cm;
+  height: 6cm;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
   border-radius: 5px;
@@ -47,16 +48,19 @@
 }
 
 .benifits{
+  position: relative;
   padding: 5px;
   display: flex;
   justify-content:center;
   align-items: center;
+  left: 250px;
+  top: -265px;
 }
 
 .ben_image{
-  height: 2cm;
-  width: 2cm; 
-  padding: 5px;
+  height: 1.7cm;
+  width: 1.7cm; 
+  padding: 0px;
 }
 
 .boc_images{
@@ -73,9 +77,11 @@
 }
 
 .topic{
+  position: relative;
   text-align: center;
   font-family:cursive;
-  
+  left: 250px;
+  top: -570px;
 }
 
 .t{
@@ -100,5 +106,18 @@
 
 .flipBackText{
     margin: 5px;
-    margin-top: 40px;
+    margin-top: 10px;
 }
+
+#firstRule .leftTopic , #firstRule .rightContent{
+    float:left;
+}
+
+/* #secondRule .leftTopic , #secondRule .rightContent{
+    float:left;
+} */
+
+/* #firstRule{
+    position: relative;
+    float:left;
+} */

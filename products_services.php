@@ -97,9 +97,10 @@
         </div>
         <script src="pro.js"></script>
     </div>
-<h1 class="topic">HIDDEN BENIFITS</h1>
+
 
 <div class="benifits">
+    
     <div class="flip-card">
         <div class="flip-card-inner">
             <div class="flip-card-front" id="boc-card">
@@ -138,9 +139,9 @@
     <div class="flip-card">
         <div class="flip-card-inner">
             <div class="flip-card-front" id="first_channeling">
-                <h2 class="t">FIRST CHANNELING</h2>
+                <h3 class="t">FIRST CHANNELING</h3>
                 <img class="ben_image" src="./images/sakImg/dis.jpg" alt="Avatar">
-                <h3>40% OFF</h3>
+                <h4>40% OFF</h4>
             </div>
             <div class="flip-card-back">
                 <div class="flipBackText">
@@ -179,8 +180,44 @@
             </div>
         </div>
     </div>
-
+    <br>
 </div>
+<h1 class="topic">HIDDEN BENIFITS</h1>
+<hr>
+<div>
+    <div id="firstRule">
+        <div class="leftTopic">
+            <p>Have any questions about health insurance plans?</p>
+        </div>
+        <div class="rightContent">
+            <p>Why do you need an health insurance?</p>
+        </div>
+        <div class="rightContent">
+            <p>What are different types of insurances?</p>
+        </div>
+        <div class="rightContent">
+            <p>How does medicare work?</p>
+        </div>
+    </div>
+    <div id="secondRule">
+        <div class="leftTopic">
+            <p>Why ESL?</p>
+        </div>
+        <div class="rightContent">
+            <h4>Care whenever you need it</h4>
+            <p>Find right care at the right time, no matter if that's your living room with virtual care or in your doctor's office.</p>
+        </div>
+        <div class="rightContent">
+            <h4>Care where ever you are</h4>
+            <p>We'll take care of you even when you are abroad</p>
+        </div>
+        <div class="rightContent">
+            <h4>Care that's rewarding</h4>
+            <p>Our excellent health care plans have brought us many awards including the award for 'The Best Healthcare Provider of the Year'.</p>
+        </div>
+    </div>
+</div>
+
     <footer>
         
         <section id="boxes">

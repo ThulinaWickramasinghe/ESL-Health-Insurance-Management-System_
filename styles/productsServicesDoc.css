@@ -54,6 +54,11 @@
     margin: 4px;
   }
 
+  #button:hover{
+      background-color: dimgrey;
+      cursor: pointer;
+  }
+
   .advertise{
     display: block;
     position: relative;
