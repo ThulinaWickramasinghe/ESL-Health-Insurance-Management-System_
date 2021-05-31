@@ -22,11 +22,11 @@
 
         <div class="topnav">
             <a class="active" href="home.html">Home</a>
-            <a href="category.html">Category</a>
-            <a href="products_services.html">Products & Services</a>
+            <a href="category.php">Category</a>
+            <a href="products_services.php">Products & Services</a>
             <a href="contact.html">Contact Us</a>
             <a href="about.html">About Us</a>
-            <a href="signup.html">Sign Up</a>
+            <a href="signup.php">Sign Up</a>
             <div class="login-container">
                 <form action="/action_page.php">
                     <input type="text" placeholder="Username" name="username">
