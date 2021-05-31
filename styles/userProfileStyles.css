@@ -260,9 +260,9 @@ body {
     height: 200px;
     border-radius: 200px;
     float: left;
-    margin: 5px;
-    top: -10px;
-    left: 10px;
+    margin: 50px;
+    top: 0px;
+    left: 0px;
 }
 
 .editButtons {
