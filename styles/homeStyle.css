@@ -20,7 +20,7 @@ body {
 }
 
 .slider {
-    height: 820px;
+    height: 90vh;
     background-image: url("../images/4th.jpg");
     background-size: cover;
     /* background-attachment: fixed; */
@@ -236,4 +236,14 @@ body {
 
 #social ul li a :hover {
     color: darkolivegreen;
+}
+
+
+#welcomeText{
+    position: relative;
+    font-family: cursive;
+    font-size:70px;
+    text-align: center;
+    color: dimgrey;
+    top: 150px;
 }

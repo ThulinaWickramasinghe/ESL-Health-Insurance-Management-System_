@@ -260,9 +260,9 @@ body {
     height: 200px;
     border-radius: 200px;
     float: left;
-    margin: 5px;
-    top: -10px;
-    left: 10px;
+    margin: 50px;
+    top: 0px;
+    left: 0px;
 }
 
 .editButtons {
@@ -500,4 +500,20 @@ body {
     left: 530px;
     top: 10px;
     font-size: small;
+}
+
+#paymentLink{
+    text-decoration: none;
+    background-color: #35424a;
+    color: aliceblue;
+    padding: 5px;
+    border-radius: 10px;
+    position: relative;
+    left: 1000px;
+    top: -175px;
+}
+
+#paymentLink:hover{
+    background-color: dimgrey;
+    cursor: pointer;
 }
