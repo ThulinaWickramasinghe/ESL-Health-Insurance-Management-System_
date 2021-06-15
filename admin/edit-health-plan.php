@@ -8,7 +8,7 @@
     </head>
     <body>
         <div id="header">
-            <center>ESM Heath Management System Admin Panel
+            <center>ESL Heath Management System Admin Panel
             </center>	
 
         </div>
