@@ -27,12 +27,17 @@
             <a href="contact.html">Contact Us</a>
             <a href="about.html">About Us</a>
             <a href="signup.php">Sign Up</a>
-            <div class="login-container">
+            <div class="login-container" style="display: none;">
                 <form action="./php/login.php" method="POST">
                     <input type="text" placeholder="Username" name="loginUserName">
                     <input type="password" placeholder="Password" name="loginPwd">
                     <button type="submit" name="loginSubmit">Login</button>
                 </form>
+            </div>
+            <div id="afterLogin">
+                <div>Display username here</div> 
+                <a href="http://"><!-- font awesome profile icon as a link to user profile page --></a>
+                <button>Log Out</button>
             </div>
         </div>
     </header>

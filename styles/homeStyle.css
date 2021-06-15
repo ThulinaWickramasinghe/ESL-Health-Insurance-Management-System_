@@ -247,3 +247,7 @@ body {
     color: dimgrey;
     top: 150px;
 }
+
+#afterLogin{
+    display: inline;
+}
