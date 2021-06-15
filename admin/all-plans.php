@@ -34,17 +34,15 @@ include './backend/db_connection.php';
                                 <label >All Plans</label>
                             </div>
                             <div style="margin-top: 30px">
+
                                 <table style="width: 100%" border="1" >
-                                    <thead>
-                                    <th>Name</th>
-                                    <th>Price</th>
-                                    <th>Description</th>
-                                    <th>Options</th>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Price</th>
+                                        <th>Description</th>
+                                        <th>Options</th>
+                                    </tr>
 
-
-                                    </thead>
-
-                                    <tbody>
                                         <?php
                                         $sql = "SELECT * FROM healthplans";
                                         $result = $conn->query($sql);
@@ -65,7 +63,6 @@ include './backend/db_connection.php';
                                                     </td>
                                                 </tr>
 
-                                                </div>
                                                 <?php
                                             }
                                         } else {
@@ -73,7 +70,7 @@ include './backend/db_connection.php';
                                         }
                                         $conn->close();
                                         ?>
-                                    </tbody>
+                                    
 
                                 </table>
                             </div>
