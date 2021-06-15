@@ -183,47 +183,56 @@
         <br>
     </div>
     <h1 class="topic">HIDDEN BENIFITS</h1>
-    <hr>
-    <div>
-        <div id="firstRule">
-            <div class="leftTopic" class="ruleContent">
+
+    <div class="block">
+        <hr>
+        <div class="firstRule">
+            <div class="leftTopic">
                 <p>Have any questions about health insurance plans?</p>
             </div>
-
-            <div class="firstRuleContent" class="ruleContent">
-                <div class="rightContent" class="ruleContent">
+            <div class="rightContent">
+                <a href="#">
                     <p>Why do you need an health insurance?</p>
-                </div>
-                <div class="rightContent" class="ruleContent">
-                    <p>What are different types of insurances?</p>
-                </div>
-                <div class="rightContent" class="ruleContent">
-                    <p>How does medicare work?</p>
-                </div>
-            </div>
+                </a>
 
+            </div>
+            <div class="rightContent">
+                <a href="#">
+                    <p>What are different types of insurances?</p>
+                </a>
+
+            </div>
+            <div class="rightContent">
+                <a href="#">
+                    <p>How does medicare work?</p>
+                </a>
+
+            </div>
         </div>
-        <div id="secondRule">
-            <div class="leftTopic" class="ruleContent">
+        <div class="secondRule">
+            <div class="leftTopic">
                 <p>Why ESL?</p>
             </div>
-            <div class="rightContent" class="ruleContent">
+            <div class="rightContent">
                 <h4>Care whenever you need it</h4>
+                <br>
                 <p>Find right care at the right time, no matter if that's your living room with virtual care or in your doctor's office.</p>
             </div>
-            <div class="rightContent" class="ruleContent">
+            <div class="rightContent">
                 <h4>Care where ever you are</h4>
+                <br>
                 <p>We'll take care of you even when you are abroad</p>
             </div>
-            <div class="rightContent" class="ruleContent">
+            <div class="rightContent">
                 <h4>Care that's rewarding</h4>
+                <br>
                 <p>Our excellent health care plans have brought us many awards including the award for 'The Best Healthcare Provider of the Year'.</p>
             </div>
         </div>
+
     </div>
 
     <footer>
-
         <section id="boxes">
             <section id="end">
                 <div class="container">

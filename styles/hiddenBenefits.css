@@ -2,7 +2,7 @@
   background-color: transparent;
   width: 4cm;
   height: 6cm;
-  perspective: 1000px; 
+  perspective: 1000px;
   margin: 2px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -26,7 +26,8 @@
 }
 
 /* Position the front and back side */
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 4cm;
   height: 6cm;
@@ -47,65 +48,126 @@
   transform: rotateY(180deg);
 }
 
-.benifits{
+.benifits {
   position: relative;
   padding: 5px;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   left: 250px;
   top: -265px;
 }
 
-.ben_image{
+.ben_image {
   height: 1.7cm;
-  width: 1.7cm; 
+  width: 1.7cm;
   padding: 0px;
 }
 
-.boc_images{
+.boc_images {
   display: inline;
 }
 
-#boc-card{
+#boc-card {
   background-color: rgb(221, 238, 113);
 }
 
-#maximise{
+#maximise {
   width: 3cm;
   height: 3cm;
 }
 
-.topic{
+.topic {
   position: relative;
   text-align: center;
-  font-family:cursive;
+  font-family: cursive;
   left: 250px;
   top: -570px;
 }
 
-.t{
+.t {
   font-family: cursive;
 }
 
-#medical_checkup{
+#medical_checkup {
   background-color: rgb(173, 173, 250);
 }
 
-#first_channeling{
+#first_channeling {
   background-color: rgb(228, 116, 116);
 }
 
-#gym{
+#gym {
   background-color: rgb(165, 236, 95);
 }
 
-#lucky_draw{
+#lucky_draw {
   background-color: rgb(206, 127, 206);
 }
 
-.flipBackText{
-    margin: 5px;
-    margin-top: 10px;
+.flipBackText {
+  margin: 5px;
+  margin-top: 10px;
 }
 
+
+
+.rightContent {
+  margin-right: 90px;
+  width: 240px;
+  height: 100px;
+}
+
+.block {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: block;
+  width: 100%;
+  height: 130px;
+  position: relative;
+  top: -250px;
+  font-size: large;
+}
+.firstRule {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  margin-top: 50px;
+}
+.secondRule {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: -30px;
+  height: 200px;
+}
+.block p {
+  overflow-wrap: break-word;
+  word-break: break-word;
+  color: antiquewhite;
+}
+
+hr {
+  background-color: rgba(222, 184, 135, 0.411);
+  height: 3px;
+  border-radius: 100px;
+  width: 97%;
+  position: relative;
+  left: 1.5%;
+}
+
+.secondRule h4{
+  color: dimgray;
+}
+
+.leftTopic {
+  margin-right: 150px;
+  font-weight: bolder;
+  width: 200px;
+  height: 100px;
+  margin-left: 20px;
+  color: darkgoldenrod;
+}
