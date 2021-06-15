@@ -327,7 +327,7 @@
                 <br>
                 <br>
                 <p>Click
-                    <a href="#">here</a> to learn more about our Insurance plans.
+                    <a href="category.php">here</a> to learn more about our Insurance plans.
                 </p>
                 <br>
 

@@ -9,7 +9,7 @@ include './backend/db_connection.php';
     </head>
     <body>
         <div id="header">
-            <center>ESL Heath Management System Admin Panel
+            <center>ESM Heath Management System Admin Panel
             </center>	
 
         </div>
