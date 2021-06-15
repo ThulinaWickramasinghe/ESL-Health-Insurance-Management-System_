@@ -109,3 +109,54 @@
     margin-top: 10px;
 }
 
+.leftTopic {
+	
+
+	margin-right:200px;
+	font-weight:bolder;
+	width:200px;
+	height:100px;
+}
+
+
+.rightContent{
+    margin-right:100px;
+	width:150px;
+	height:100px;
+  
+}
+
+.block{
+	display:block;
+	width:100%;
+	height:210px;
+background-color:white;
+}
+.firstRule{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width:100%;
+	height:100px;
+
+}
+.secondRule{
+	
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width:100%;
+	margin-top:-90px;
+	height:200px;
+
+	
+}
+.block p{
+	overflow-wrap: break-word;
+	 word-break: break-word;
+	
+}
+hr{
+	background-color:black;
+	height:3px;
+}
