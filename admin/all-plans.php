@@ -1,4 +1,10 @@
 <?php
+session_start();
+if(empty($_SESSION['id'])){
+        echo "<script>window.location.replace('./login.php')</script>";
+}
+?>
+<?php
 include './backend/db_connection.php';
 ?>
 <!DOCTYPE html>
@@ -25,9 +31,9 @@ include './backend/db_connection.php';
 
                     
                             <div class="title-light" >
-                                <label>Want to add a New Helth Plan?</label>
+                                <label>Want to add a New Health Plan?</label>
                                 <div style="margin-left: auto">
-                                    <button class="btn-main">Create</button>
+                                    <button class="btn-main"><a href="create-healthplans.php">Create</a></button>
                                 </div>
                             </div>
                                     <div class="title-main" >
