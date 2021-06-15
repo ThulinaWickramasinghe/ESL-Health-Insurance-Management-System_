@@ -49,7 +49,7 @@
                     <p>Dental Surgeon</p>
                 </div>
             </div>
-        
+
             <div class="card">
                 <img class="image" src="./images/sakImg/doctor1.jpg">
                 <div class="containerS">
@@ -57,7 +57,7 @@
                     <p>Cardiologist</p>
                 </div>
             </div>
-        
+
             <div class="card">
                 <img class="image" src="./images/sakImg/doctor2.jfif">
                 <div class="containerS">
@@ -65,7 +65,7 @@
                     <p>ENT Surgeon</p>
                 </div>
             </div>
-        
+
             <div class="card">
                 <img class="image" src="./images/sakImg/doctor5.jfif">
                 <div class="containerS">
@@ -73,21 +73,21 @@
                     <p>Neurologist</p>
                 </div>
             </div>
-        
+
             <div class="card">
                 <img class="image" src="./images/sakImg/doctor3.jpg">
                 <div class="containerS">
                     <p><b>Dr. Kamal Punchihewa</b></p>
                     <p>VOG sergeon</p>
                 </div>
-            </div>  
+            </div>
             <div class="card">
                 <img class="image" src="./images/sakImg/doctor4.jfif">
                 <div class="containerS">
                     <p><b>Dr. Pavani Rathnayaka</b></p>
                     <p>Anesthiologist</p>
                 </div>
-            </div>    
+            </div>
             <button class="right-button" id="button" onclick="plusDivs(+1)">&#10095;</button>
         </div>
         <div class="advertise">
@@ -99,129 +99,131 @@
     </div>
 
 
-<div class="benifits">
-    
-    <div class="flip-card">
-        <div class="flip-card-inner">
-            <div class="flip-card-front" id="boc-card">
-                <h2 class="t"><b>SPECIAL OFFER</b></h2>
-                <div class="boc_images">
-                    <img class="ben_image" id="boc" src="./images/sakImg/boc.jfif" alt="Avatar">
-                    <img class="ben_image" id="discount" src="./images/sakImg/discount.jpg" alt="Avatar">
+    <div class="benifits">
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front" id="boc-card">
+                    <h2 class="t"><b>SPECIAL OFFER</b></h2>
+                    <div class="boc_images">
+                        <img class="ben_image" id="boc" src="./images/sakImg/boc.jfif" alt="Avatar">
+                        <img class="ben_image" id="discount" src="./images/sakImg/discount.jpg" alt="Avatar">
+                    </div>
+                    <h4>For all BOC credit card payments</h4>
                 </div>
-                <h4>For all BOC credit card payments</h4>
-            </div>
-            <div class="flip-card-back">
-                <div class="flipBackText">
-                    <h2>10% DISCOUNT</h2>
-                    <p class="dis">All BOC credit card holders will experience a 10% discount on every channeling session</p>
-                    <p class="dis">Experience this offer through out the whole month</p>
-                </div>  
-            </div>
-        </div>
-    </div>
-
-    <div class="flip-card">
-        <div class="flip-card-inner">
-            <div class="flip-card-front" id="medical_checkup">
-                <h2 class="t">ANNUAL MEDICAL CHECKUP</h2>
-                <img class="ben_image" src="./images/sakImg/medical_checkup.jpg" alt="Avatar">
-            </div>
-            <div class=" flip-card-back">
-                <div class="flipBackText">
-                    <h2>World Health Day Special</h2>
-                    <p>All members will be able to experience a full medical checkup on 7th of April regarding Worlds' Health Day</p>
-                </div> 
-            </div>
-        </div>
-    </div>
-
-    <div class="flip-card">
-        <div class="flip-card-inner">
-            <div class="flip-card-front" id="first_channeling">
-                <h3 class="t">FIRST CHANNELING</h3>
-                <img class="ben_image" src="./images/sakImg/dis.jpg" alt="Avatar">
-                <h4>40% OFF</h4>
-            </div>
-            <div class="flip-card-back">
-                <div class="flipBackText">
-                    <h4>There will be a 40% discount on your first online channeling session</h4>
+                <div class="flip-card-back">
+                    <div class="flipBackText">
+                        <h2>10% DISCOUNT</h2>
+                        <p class="dis">All BOC credit card holders will experience a 10% discount on every channeling session</p>
+                        <p class="dis">Experience this offer through out the whole month</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="flip-card">
-        <div class="flip-card-inner">
-            <div class="flip-card-front" id="gym">
-                <h2 class="t">PHYSICAL FITNESS CENTRE FACILITIES</h2>
-                <img class="ben_image" src="./images/sakImg/gym.jpg" alt="Avatar">
-            </div>
-            <div class="flip-card-back">
-                <div class="flipBackText">
-                    <h1>Gym Facilities</h1>
-                    <p>Members can experience fantastic physical fitness facilities with special offers with your favourite gym</p>
-                </div> 
-            </div>
-        </div>
-    </div>
-
-    <div class="flip-card">
-        <div class="flip-card-inner">
-            <div class="flip-card-front" id="lucky_draw">
-                <h2 class="t">LUCKY DRAW</h2>
-                <img class="ben_image" id="maximise" src="./images/sakImg/lottery.jpg" alt="Avatar">
-            </div>
-            <div class="flip-card-back">
-                <div class="flipBackText">
-                    <h2>Random Lottery Drawings</h2>
-                <p>There will be daily/weekly/monthly random lucky draws which will give different types of offers for members</p>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front" id="medical_checkup">
+                    <h2 class="t">ANNUAL MEDICAL CHECKUP</h2>
+                    <img class="ben_image" src="./images/sakImg/medical_checkup.jpg" alt="Avatar">
+                </div>
+                <div class=" flip-card-back">
+                    <div class="flipBackText">
+                        <h2>World Health Day Special</h2>
+                        <p>All members will be able to experience a full medical checkup on 7th of April regarding Worlds' Health Day</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <br>
-</div>
-<h1 class="topic">HIDDEN BENIFITS</h1>
-<hr>
 
-<div class="block">
-    <div class="firstRule">
-        <div class="leftTopic">
-            <p>Have any questions about health insurance plans?</p>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front" id="first_channeling">
+                    <h3 class="t">FIRST CHANNELING</h3>
+                    <img class="ben_image" src="./images/sakImg/dis.jpg" alt="Avatar">
+                    <h4>40% OFF</h4>
+                </div>
+                <div class="flip-card-back">
+                    <div class="flipBackText">
+                        <h4>There will be a 40% discount on your first online channeling session</h4>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="rightContent">
-            <p>Why do you need an health insurance?</p>
-        </div>
-        <div class="rightContent">
-            <p>What are different types of insurances?</p>
-        </div>
-        <div class="rightContent">
-            <p>How does medicare work?</p>
-        </div>
-    </div>
-    <div class="secondRule">
-        <div class="leftTopic">
-            <p>Why ESL?</p>
-        </div>
-        <div class="rightContent">
-            <h4>Care whenever you need it</h4>
-            <p>Find right care at the right time, no matter if that's your living room with virtual care or in your doctor's office.</p>
-        </div>
-        <div class="rightContent">
-            <h4>Care where ever you are</h4>
-            <p>We'll take care of you even when you are abroad</p>
-        </div>
-        <div class="rightContent">
-            <h4>Care that's rewarding</h4>
-            <p>Our excellent health care plans have brought us many awards including the award for 'The Best Healthcare Provider of the Year'.</p>
-        </div>
-    </div>
-</div>
 
-<hr>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front" id="gym">
+                    <h2 class="t">PHYSICAL FITNESS CENTRE FACILITIES</h2>
+                    <img class="ben_image" src="./images/sakImg/gym.jpg" alt="Avatar">
+                </div>
+                <div class="flip-card-back">
+                    <div class="flipBackText">
+                        <h1>Gym Facilities</h1>
+                        <p>Members can experience fantastic physical fitness facilities with special offers with your favourite gym</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front" id="lucky_draw">
+                    <h2 class="t">LUCKY DRAW</h2>
+                    <img class="ben_image" id="maximise" src="./images/sakImg/lottery.jpg" alt="Avatar">
+                </div>
+                <div class="flip-card-back">
+                    <div class="flipBackText">
+                        <h2>Random Lottery Drawings</h2>
+                        <p>There will be daily/weekly/monthly random lucky draws which will give different types of offers for members</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+    <h1 class="topic">HIDDEN BENIFITS</h1>
+    <hr>
+    <div>
+        <div id="firstRule">
+            <div class="leftTopic" class="ruleContent">
+                <p>Have any questions about health insurance plans?</p>
+            </div>
+
+            <div class="firstRuleContent" class="ruleContent">
+                <div class="rightContent" class="ruleContent">
+                    <p>Why do you need an health insurance?</p>
+                </div>
+                <div class="rightContent" class="ruleContent">
+                    <p>What are different types of insurances?</p>
+                </div>
+                <div class="rightContent" class="ruleContent">
+                    <p>How does medicare work?</p>
+                </div>
+            </div>
+
+        </div>
+        <div id="secondRule">
+            <div class="leftTopic" class="ruleContent">
+                <p>Why ESL?</p>
+            </div>
+            <div class="rightContent" class="ruleContent">
+                <h4>Care whenever you need it</h4>
+                <p>Find right care at the right time, no matter if that's your living room with virtual care or in your doctor's office.</p>
+            </div>
+            <div class="rightContent" class="ruleContent">
+                <h4>Care where ever you are</h4>
+                <p>We'll take care of you even when you are abroad</p>
+            </div>
+            <div class="rightContent" class="ruleContent">
+                <h4>Care that's rewarding</h4>
+                <p>Our excellent health care plans have brought us many awards including the award for 'The Best Healthcare Provider of the Year'.</p>
+            </div>
+        </div>
+    </div>
+
     <footer>
-        
+
         <section id="boxes">
             <section id="end">
                 <div class="container">
@@ -266,7 +268,7 @@
                 </div>
             </section>
 
-           
+
         </section>
         <div id="copyrights">
             <p>&copy; 2021 Easy Sri Lanka Health Insurance Pvt(ltd). All rights reserved.</p>
