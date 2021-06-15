@@ -28,10 +28,10 @@
             <a href="about.html">About Us</a>
             <a href="signup.php">Sign Up</a>
             <div class="login-container">
-                <form action="/action_page.php">
-                    <input type="text" placeholder="Username" name="username">
-                    <input type="password" placeholder="Password" name="psw">
-                    <button type="submit">Login</button>
+                <form action="./php/login.php" method="POST">
+                    <input type="text" placeholder="Username" name="loginUserName">
+                    <input type="password" placeholder="Password" name="loginPwd">
+                    <button type="submit" name="loginSubmit">Login</button>
                 </form>
             </div>
         </div>
