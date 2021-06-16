@@ -7,7 +7,7 @@ if (isset($_POST['submit'])) {
     $user_name = $_POST['username'];
     $password = $_POST['password'];
 
-    $sql = "select * from admin where newUserName='$user_name' and newPwd='$password'";
+    $sql = "select * from user_details where newUserName='$user_name' and newPwd='$password'";
 
     //Execute the query
     $result = mysqli_query($conn, $sql);

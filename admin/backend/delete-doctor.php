@@ -13,7 +13,7 @@ $result=$conn->query($sql);
 if ($result === TRUE) {
 
     echo "Record Deleted successfully";
-    echo "<script>window.location.replace('../all-plans.php')</script>";
+    echo "<script>window.location.replace('../doctor_details.php')</script>";
 } else {
     echo "An Error While Deleting the record: " ;
 }
