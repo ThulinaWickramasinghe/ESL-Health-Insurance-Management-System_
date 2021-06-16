@@ -34,13 +34,13 @@
             <a href="contact.html">Contact Us</a>
             <a href="about.html">About Us</a>
             <a href="signup.html">Sign Up</a>
-            <div class="login-container">
+            <!-- <div class="login-container">
                 <form action="/action_page.php">
                     <input type="text" placeholder="Username" name="username">
                     <input type="password" placeholder="Password" name="psw">
                     <button type="submit">Login</button>
                 </form>
-            </div>
+            </div> -->
         </div>
     </header>
 <div class="form"> 

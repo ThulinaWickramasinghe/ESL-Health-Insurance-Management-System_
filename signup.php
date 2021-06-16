@@ -7,9 +7,6 @@ if ($queryReult = mysqli_query($conn, $sqlstmt)) {
         array_push($result, $row['userName']);
     }
 }
-
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -618,6 +615,8 @@ if ($queryReult = mysqli_query($conn, $sqlstmt)) {
         function termsChecking() {
             if (document.getElementById('terms').checked == true) {
                 document.getElementById('formSubmit').disabled = false;
+            } else {
+                document.getElementById('formSubmit').disabled = true;
             }
         }
 

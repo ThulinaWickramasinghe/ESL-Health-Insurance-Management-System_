@@ -1,7 +1,6 @@
 <?php
 
 if(isset($_POST["loginSubmit"])){
-
     require "loginConfig.php";
     $loginUserName = $_POST["loginUserName"];
     $loginPwd = $_POST["loginPwd"];
@@ -25,7 +24,5 @@ if(isset($_POST["loginSubmit"])){
     }
 
 }
-
-
 
 ?>
