@@ -1,5 +1,5 @@
 <?php
-
+$
 if(isset($_POST["loginSubmit"])){
     require "loginConfig.php";
     $loginUserName = $_POST["loginUserName"];
@@ -14,7 +14,8 @@ if(isset($_POST["loginSubmit"])){
         //valid username
 
         if($result["newPwd"] == $loginPwd){
-            //display after login content
+            echo
+            
         }else{
             //invalid password
         }
@@ -22,6 +23,9 @@ if(isset($_POST["loginSubmit"])){
     } else {
         //invalid username
     }
+
+    header("Location: ../home.html");
+    exit();
 
 }
 
