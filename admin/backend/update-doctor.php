@@ -1,21 +1,20 @@
 <?php
 
 include_once './db_connection.php';
-$id = $_POST['id'];
-$pname = $_POST['name'];
-$desc = $_POST['description'];
-$price = $_POST['price'];
+$dname = $_POST['dname'];
+$dspecialization = $_POST['dspecialization'];
+$dpayment = $_POST['dpayment'];
+$dhospital = $_POST['dhospital'];
 
 
-
-$sql = "UPDATE healthplans set Pname='$pname', Pdescription='$desc', Pprice='$price'
-Where PID='$id'";
+$sql = "UPDATE doctor set Dname='$dname', Dspecialization='$dspecialization', Dpayment='$dpayment', Dhospital='$dhospital'
+Where DID='$id'";
 $result=$conn->query($sql);
 
 if ($result === TRUE) {
 
     echo "Record updated successfully";
-    echo "<script>window.location.replace('../all-plans.php')</script>";
+    echo "<script>window.location.replace('../doctor_details.php')</script>";
 } else {
     echo "An Error While updating record: ";
 }

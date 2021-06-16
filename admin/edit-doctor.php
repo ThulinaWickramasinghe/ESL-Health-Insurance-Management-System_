@@ -21,7 +21,7 @@
                         <div style="padding:20px">
 
                             <div class="title" style="border: 1px solid;padding: 30px;">
-                                Update Health Plan
+                                Update Doctor Details
                             </div>
                         </div>
                         <div style="padding:20px">
@@ -32,7 +32,7 @@
                             //Get the value of the id send through the link
                             $id=$_GET['id'];
                            
-                            $sql = "SELECT * FROM healthplans Where PID='$id'";
+                            $sql = "SELECT * FROM doctor Where DID='$id'";
                             
                             $result = $conn->query($sql);
 
@@ -41,20 +41,25 @@
                                 while ($row = $result->fetch_assoc()) {
                                     ?>
                                     <div class="title" style="border: 1px solid;padding: 30px;">
-                                        <form style="text-align: center" method="POST" action="./backend/update-health-plan.php">
+                                        <form style="text-align: center" method="POST" action="./backend/update-doctor.php">
                                             <div style="padding: 20px">
-                                                <span>Name</span>
-                                                <input type="text" name="name" value="<?php echo $row["Pname"] ?>">
+                                                <span>Doctor Name</span>
+                                                <input type="text" name="dname" value="<?php echo $row["Dname"] ?>">
                                             </div>
 
                                             <div style="padding: 20px">
-                                                <span>Description </span>
-                                                <input type="text" name="description" value="<?php echo $row["Pdescription"] ?>">
+                                                <span>Doctor Specialization </span>
+                                                <input type="text" name="dspecialization" value="<?php echo $row["Dspecialization"] ?>">
                                             </div>
 
                                             <div style="padding: 20px">
-                                                <span>Price</span>
-                                                <input type="text" name="price" value="<?php echo $row["Pprice"] ?>">
+                                                <span>Doctor Payment</span>
+                                                <input type="text" name="dpayment" value="<?php echo $row["Dpayment"] ?>">
+                                            </div>
+
+                                            <div style="padding: 20px">
+                                                <span>Doctor Hospital</span>
+                                                <input type="text" name="dhospital" value="<?php echo $row["Dhospital"] ?>">
                                             </div>
                                             <input type="hidden" name="id" value="<?php echo $id?>">
                                             
