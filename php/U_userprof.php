@@ -1,14 +1,15 @@
 <?php
 include 'database.php';
 
-$User_ID = $_POST['UID'];
-$user_add=$_POST['userAddress'];
-$new_tel=$_POST['newtpno'];
-$e_mail=$_POST['emailAddress'];
-$n_pw=$_POST['newPwd'];
-$new_name=$_POST['newUserName'];
+$UID=$_POST['UID'];
+$username = $_POST['username'];
+$email=$_POST['email'];
+$password=$_POST['password'];
+$mobile_number=$_POST['mobile_number'];
+$address=$_POST['address'];
 
-$sql = "UPDATE User_details SET userAddress ='$user_add', newtpno ='$new_tel', emailAddress ='$e_mail', newPwd ='$n_pw', newUserName ='$new_name' WHERE UID ='$User_ID' ";
+
+$sql = "UPDATE user SET username ='$username', email ='$email', password ='$password', mobile_number ='$mobile_number', address ='$address' WHERE UID ='$UID' ";
 
 if ($conn->query($sql) === TRUE) {
   echo "Record updated successfully";

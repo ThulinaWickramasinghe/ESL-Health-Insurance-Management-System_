@@ -46,7 +46,7 @@
 <div class="form"> 
 <div class="form-align"> 
 
- <form action="./php/userDeleteFile.php" method="post" id="account">
+ <form action="./php/U_userprof.php" method="post" id="account">
      <table border="1px solid black">     
        <tr>
             <td  rowspan="3">
