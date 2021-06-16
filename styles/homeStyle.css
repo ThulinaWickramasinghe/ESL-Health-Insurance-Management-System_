@@ -104,6 +104,7 @@ body {
 /* Style the input container */
 
 .topnav .login-container {
+  display: inline;
   float: right;
 }
 
@@ -242,7 +243,7 @@ body {
 }
 
 #afterLogin{
-  display: inline;
+  display: none;
   position: relative;
   left: 300px;
 }

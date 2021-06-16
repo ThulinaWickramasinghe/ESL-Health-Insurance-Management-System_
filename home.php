@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,17 +31,17 @@
             <a href="contact.html">Contact Us</a>
             <a href="about.html">About Us</a>
             <a href="signup.php">Sign Up</a>
-            <div class="login-container" >
+            <div class="login-container">
                 <form action="./php/login.php" method="POST">
                     <input type="text" placeholder="Username" name="loginUserName">
                     <input type="password" placeholder="Password" name="loginPwd">
                     <button type="submit" name="loginSubmit">Login</button>
                 </form>
             </div>
-            <div id="afterLogin" style="display: none;">
-                <div class="aldiv" id="userProflink"><a href="./user.php" ><i class="fas fa-user-circle fa-lg" ></i></a></div>
-                <div class="aldiv" id="userNameDisplay">username username</div> 
-                <div class="aldiv" id="logoutButton"><button>Log Out</button></div> 
+            <div id="afterLogin">
+                <div class="aldiv" id="userProflink"><a href="./user.php"><i class="fas fa-user-circle fa-lg"></i></a></div>
+                <div class="aldiv" id="userNameDisplay">username username</div>
+                <div class="aldiv" id="logoutButton"><button>Log Out</button></div>
             </div>
         </div>
     </header>
@@ -48,7 +52,7 @@
                 <h1 id="welcomeText">Welcome to <br> ESL Health Insurance...</h1>
             </div>
         </section>
-        </main>
+    </main>
 
     <footer>
         <section id="boxes">
@@ -101,6 +105,30 @@
 
 
     </footer>
+
+    <?php
+    $_SESSION["validUser"] = false;
+
+    $script = <<< JS
+
+$(function() {
+   var beforeLogin = document.getElementsByClassName("login-container");
+        var afterLogin = document.getElementById("afterLogin");
+        beforeLogin.styles.display = "none";
+        afterLogin.styles.display = "inline";
+});
+
+JS;
+
+
+    if ($_SESSION["validUser"] == true) {
+    ?>
+        <script>
+            <?= $script ?>
+        </script>
+    <?php } ?>
+
+
 </body>
 
 </html>

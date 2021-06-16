@@ -5,9 +5,9 @@ $userName = "root";
 $password = "";
 $dbName = "health_insurance";
 
-$conn = new mysqli($serverName, $userName, $password, $dbName);
+$connect = new mysqli($serverName, $userName, $password, $dbName);
 
-if ($conn->connect_error) {
+if ($connect->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
