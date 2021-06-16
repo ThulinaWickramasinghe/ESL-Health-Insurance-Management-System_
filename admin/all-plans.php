@@ -15,7 +15,7 @@ include './backend/db_connection.php';
     </head>
     <body>
         <div id="header">
-            <center>ESL Heath Management System Admin Panel
+            <center>ESL Health Management System Admin Panel
             </center>	
 
         </div>

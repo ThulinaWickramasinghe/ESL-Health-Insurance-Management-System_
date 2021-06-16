@@ -11,11 +11,11 @@ if(empty($_SESSION['id'])){
                 </div>
                 <ul>
 
-                    <a href="create-healthplans.php"><li>Manage Helth Plans</li></a> 
+                    <a href="create-healthplans.php"><li>Manage Health Plans</li></a> 
                     
                   
                 
-                    <a href="#" style="color: black; text-decoration: none;"><li >Manage Staff</li></a>
+                    <a href="#" style="color: black; text-decoration: none;"><li >Manage DoctorS</li></a>
                 </ul>
 
             </div>

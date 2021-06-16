@@ -14,7 +14,7 @@ if(empty($_SESSION['id'])){
     </head>
     <body>
         <div id="header">
-            <center>ESL Heath Management System Admin Panel
+            <center>ESL Health Management System Admin Panel
             </center>	
 
         </div>
