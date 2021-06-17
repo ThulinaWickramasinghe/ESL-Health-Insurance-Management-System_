@@ -54,7 +54,7 @@ if ($result->num_rows > 0) {
         </div>
 
         <div class="topnav">
-            <a href="home.html">Home</a>
+            <a href="home.php">Home</a>
             <a class="active" href="category.php">Category</a>
             <a href="products_services.php">Products & Services</a>
             <a href="contact.html">Contact Us</a>
