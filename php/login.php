@@ -19,12 +19,10 @@ if(isset($_POST["loginSubmit"])){
         //valid username
         $row=$result->fetch_assoc();
         if( $row["newPwd"] ===$loginPwd){
-                echo "Works Here1";
             $_SESSION["validUser"] = true;
         }else{
             //invalid password
             $_SESSION["validUser"] = false;
-                echo "Works Here2";
 		
         }
       
@@ -35,7 +33,7 @@ if(isset($_POST["loginSubmit"])){
    }else{
 	   echo "Error because:".$conn->error;
    }
-	header("Location: ../home.php" , false);
+	header("Location: ../home.php");
     exit();
 
 }
