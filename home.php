@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -109,20 +106,21 @@ session_start();
 
     $script = <<< JS
 
-$(function() {
-   var beforeLogin = document.getElementsByClassName("login-container");
+    function doThis() {
+    var beforeLogin = document.getElementsByClassName("login-container");
         var afterLogin = document.getElementById("afterLogin");
         beforeLogin.styles.display = "none";
         afterLogin.styles.display = "inline";
-});
+    });
 
-JS;
+    doThis();
+    JS;
 
 
     if ($_SESSION["validUser"] == true) {
     ?>
         <script>
-            <?= $script ?>
+            <?php echo "$script" ?>
         </script>
     <?php } ?>
 

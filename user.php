@@ -28,7 +28,7 @@
         </div>
 
         <div class="topnav">
-            <a href="home.html">Home</a>
+            <a href="home.php">Home</a>
             <a href="category.html">Category</a>
             <a href="products_services.html">Products & Services</a>
             <a href="contact.html">Contact Us</a>

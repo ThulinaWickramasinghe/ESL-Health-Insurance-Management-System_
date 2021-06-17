@@ -21,7 +21,7 @@
         </div>
 
         <div class="topnav">
-            <a class="active" href="home.html">Home</a>
+            <a class="active" href="home.php">Home</a>
             <a href="category.php">Category</a>
             <a href="products_services.php">Products & Services</a>
             <a href="contact.html">Contact Us</a>

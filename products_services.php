@@ -23,7 +23,7 @@
         </div>
 
         <div class="topnav">
-            <a href="home.html">Home</a>
+            <a href="home.php">Home</a>
             <a href="category.php">Category</a>
             <a class="active" href="products_services.php">Products & Services</a>
             <a href="contact.html">Contact Us</a>
