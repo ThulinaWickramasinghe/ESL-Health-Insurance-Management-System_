@@ -1,5 +1,5 @@
 <?php
-include 'database.php';
+include '../php/C_database.php';
 
 $UID=$_POST['UID'];
 $username = $_POST['username'];
