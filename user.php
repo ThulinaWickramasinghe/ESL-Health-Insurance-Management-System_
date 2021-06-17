@@ -46,7 +46,7 @@
 <div class="form"> 
 <div class="form-align"> 
 
- <form action="./php/U_userprof.php" method="post" id="account">
+ <form action="../php/U_userprof.php" method="post" id="account">
      <table border="1px solid black">     
        <tr>
             <td  rowspan="3">
@@ -54,28 +54,28 @@
             </td > 
 			<!--<php echo ;?>-->
             <td><p>User name:</p>
-			     <input name="username" class="enable" type="text" value="<?php echo $username;?>" disabled />
+			     <input name="username" class="enable" type="text"  disabled />
 				 
             </td>
 			 <td>
 		  <p>Email:</p>
-		  <input name="email" class="enable" type="email" value="<?php echo $email;?>" disabled></td>
+		  <input name="email" class="enable" type="email"  disabled></td>
 		  
         </tr>
          <tr>
          <td>
 		  <p>password:</p>
-		  <input name="password" class="enable" type="password" id="password" value="<?php echo $password;?>" disabled>
+		  <input name="password" class="enable" type="password" id="password"  disabled>
 		  </td>
 		 <td>
 		  <p>Mobile number:</p>
-		  <input name="mobile_number" class="enable" type="text" value="<?php echo $mobile;?>" pattern="[0-9]{9}" disabled>
+		  <input name="mobile_number" class="enable" type="text"  pattern="[0-9]{9}" disabled>
 		  </td>
          </tr>
 		 <tr>
 		 
 			<td><p>Address:</p>
-		      <textarea name="address" class="enable" cols="20" rows="5"  disabled><?php echo htmlspecialchars($address);?> </textarea>
+		      <textarea name="address" class="enable" cols="20" rows="5"  disabled> </textarea>
 		     </td>
            <td>
          <input class="enable" type="hidden"  name="userID" value="<?php  echo $UID; ?>">
